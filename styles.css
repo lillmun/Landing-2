@@ -19,6 +19,16 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
+@media (pointer: coarse), (hover: none) {
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot,
+  .cursor-circle {
+    display: none;
+  }
+}
 
 .font-display { font-family: 'Geist', sans-serif; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -51,14 +61,14 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.45);
-  transition: all 0.35s ease;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.38);
+  transition: all 0.4s var(--ease-out);
 }
 
 .glass-card-premium:hover {
-  background: rgba(0, 0, 0, 0.45);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 12px 26px rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.42);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.42);
 }
 
 /* --- GLASS PANEL · EDITORIAL PREMIUM --- */
@@ -71,8 +81,8 @@ body {
     rgba(255,255,255,0.015)
   );
 
-  backdrop-filter: blur(14px) saturate(130%);
-  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  backdrop-filter: blur(12px) saturate(130%);
+  -webkit-backdrop-filter: blur(12px) saturate(130%);
 
   border-radius: 1rem;
   padding: 1.1rem 1.4rem;
@@ -83,18 +93,13 @@ body {
 
   border: 1px solid rgba(255,255,255,0.12);
 
-  /* MICROINTERACCIÓN */
-  transition:
-    backdrop-filter 0.5s ease,
-    background 0.5s ease,
-    box-shadow 0.5s ease,
-    transform 0.45s ease;
+  transition: all 0.4s var(--ease-out);
 }
 
 /* HOVER · sensación de luz + flotación */
 .glass-panel:hover {
-  backdrop-filter: blur(18px) saturate(145%);
-  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  backdrop-filter: blur(15px) saturate(140%);
+  -webkit-backdrop-filter: blur(15px) saturate(140%);
 
   background: linear-gradient(
     180deg,
@@ -102,23 +107,25 @@ body {
     rgba(255,255,255,0.025)
   );
 
+  border-color: rgba(163,150,255,0.22);
+
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.25),
-    0 28px 60px rgba(0,0,0,0.45);
+    0 20px 45px rgba(0,0,0,0.38),
+    0 0 0 1px rgba(163,150,255,0.05);
 
   transform: translateY(-2px);
 }
 
 
-
 /* Micro-interacción muy sutil */
 .glass-highlight {
-  transition: background 0.4s ease, border-color 0.4s ease;
+  transition: all 0.4s var(--ease-out);
 }
 
 .glass-highlight:hover {
   background: rgba(0, 0, 0, 0.55);
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.16);
 }
 /* --- GLASS SUBCARD --- */
 .glass-subcard {
@@ -127,18 +134,18 @@ body {
   border-radius: 0.75rem;
   padding: 0.9rem 0.9rem;
 
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 
-  transition:
-    background 0.35s ease,
-    box-shadow 0.35s ease,
-    transform 0.35s ease;
+  transition: all 0.35s var(--ease-out);
 }
 
 .glass-subcard:hover {
-  background: rgba(255,255,255,0.06);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.055);
+  border-color: rgba(163,150,255,0.14);
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.22),
+    0 0 0 1px rgba(163,150,255,0.04);
   transform: translateY(-2px);
 }
 
@@ -218,7 +225,7 @@ body {
 }
 .tilt-card { transform-style: preserve-3d; transition: transform 0.1s; }
 .tilt-inner { transform: translateZ(40px); }
-.horizontal-section { height: 400vh; position: relative; }
+.horizontal-section { position: relative; } /* sin height fijo */
 .sticky-wrapper { position: relative; display: flex; align-items: flex-start; }
 .sticky-content { position: sticky; top: 20vh; }
 
@@ -306,7 +313,7 @@ body {
 
 /* Suavidad al apilar */
 .sticky article{
-  transition: transform .45s ease, box-shadow .45s ease, filter .45s ease;
+  transition: transform .4s var(--ease-out), box-shadow .4s var(--ease-out), filter .4s var(--ease-out);
   will-change: transform;
 }
 
@@ -369,8 +376,8 @@ body {
   border-radius: 22px;
   border: 1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.12);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   padding: 22px 22px;
   display: grid;
   grid-template-columns: 34px 1fr;
@@ -446,7 +453,7 @@ body {
 .accordion-container { display: flex; height: 70vh; gap: 1rem; }
 .accordion-item { flex: 1; position: relative; overflow: hidden; transition: flex 0.8s var(--ease-out); border-radius: 12px; filter: grayscale(100%); }
 .accordion-item:hover { flex: 3; filter: grayscale(0%); }
-.accordion-img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.accordion-img { width: 100%; height: 100%; object-fit: cover; object-position: center; position: absolute; inset: 0; }
 .accordion-text { position: absolute; bottom: 2rem; left: 2rem; opacity: 0; transform: translateY(20px); transition: all 0.5s 0.2s; white-space: nowrap; }
 .accordion-item:hover .accordion-text { opacity: 1; transform: translateY(0); }
 
@@ -502,11 +509,178 @@ body {
 #toast.show { transform: translateY(0); }
 
 .main-content {
-  position: relative; z-index: 10; background-color: var(--bg-color);
-  margin-bottom: 80vh; box-shadow: 0 50px 50px #000;
+  position: relative;
+  z-index: 10;
+  background-color: var(--bg-color);
+  margin-bottom: 80vh;
+  box-shadow: 0 30px 40px rgba(0,0,0,0.6);
 }
 .footer-fixed {
   position: fixed; bottom: 0; left: 0; width: 100%; height: 80vh;
   z-index: 1; display: flex; align-items: center; justify-content: center;
 }
 
+.whatsapp-orb {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 11px 15px 11px 11px;
+  border: 1px solid rgba(163, 150, 255, 0.34);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(163, 150, 255, 0.24), transparent 34%),
+    linear-gradient(135deg, rgba(15, 15, 26, 0.88), rgba(6, 6, 12, 0.82));
+  color: #ffffff;
+  text-decoration: none;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.48),
+    0 0 34px rgba(163, 150, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  transform: translateZ(0);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.whatsapp-orb::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(163, 150, 255, 0.12),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.whatsapp-orb:hover {
+  transform: translateY(-4px) scale(1.025);
+  border-color: rgba(163, 150, 255, 0.62);
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.58),
+    0 0 48px rgba(163, 150, 255, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.whatsapp-orb:hover::before {
+  opacity: 1;
+}
+
+.whatsapp-orb__icon {
+  position: relative;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.3), transparent 28%),
+    linear-gradient(135deg, #25d366, #128c7e);
+  box-shadow:
+    0 0 26px rgba(37, 211, 102, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  flex-shrink: 0;
+}
+
+.whatsapp-orb__icon svg {
+  width: 27px;
+  height: 27px;
+}
+
+.whatsapp-orb__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  padding-right: 4px;
+}
+
+.whatsapp-orb__eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.48);
+  margin-bottom: 4px;
+}
+
+.whatsapp-orb__content strong {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.whatsapp-orb__pulse {
+  position: absolute;
+  left: 34px;
+  top: 34px;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  background: rgba(37, 211, 102, 0.22);
+  animation: whatsappPulse 2.2s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes whatsappPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.85;
+  }
+
+  70% {
+    transform: translate(-50%, -50%) scale(1.9);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .whatsapp-orb {
+    right: 18px;
+    bottom: 18px;
+    padding: 10px;
+    gap: 0;
+  }
+
+  .whatsapp-orb__content {
+    display: none;
+  }
+
+  .whatsapp-orb__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .whatsapp-orb__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .whatsapp-orb__pulse {
+    left: 34px;
+    top: 34px;
+    width: 48px;
+    height: 48px;
+  }
+}

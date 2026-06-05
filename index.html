@@ -1,79 +1,119 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tubepilotpro | Landing & Web Design Studio</title>
-<meta name="description" content="Estudio de diseño web especializado en landings modernas, rápidas e interactivas para marcas y emprendedores. Diseño, desarrollo y animación." />
-<meta name="robots" content="index,follow" />
-<!-- Open Graph -->
-<meta property="og:title" content="Diseño web y landings interactivas | Tubepilotpro" />
-<meta property="og:description" content="Estudio de diseño web especializado en landings modernas, rápidas e interactivas para marcas y emprendedores." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://tudominio.com/" />
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Diseño web y landings interactivas | Tubepilotpro" />
-<meta name="twitter:description" content="Estudio de diseño web especializado en landings modernas, rápidas e interactivas para marcas y emprendedores." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Dependencies -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="./CSS/styles.css">
+  <title> Pilot Web Studio|Diseño web profesional y landings a medida</title>
+  <meta
+    name="description"
+    content="Diseñamos páginas web y landing pages a medida para marcas que quieren una presencia digital más cuidada, profesional y enfocada en conversión."
+  >
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Pilot Web Studio">
+  <meta name="theme-color" content="#050505">
+
+  <link rel="canonical" href="https://tudominio.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diseño web profesional y landings a medida | Pilot Web Studio">
+  <meta
+    property="og:description"
+    content="Páginas web y landing pages a medida con diseño cuidado, estructura clara y enfoque en conversión."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tudominio.com/">
+  <meta property="og:image" content="https://tudominio.com/img/og-image.jpg">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Diseño web profesional y landings a medida | Pilot Web Studio">
+  <meta
+    name="twitter:description"
+    content="Diseñamos webs y landing pages profesionales, visuales y enfocadas en conversión."
+  >
+  <meta name="twitter:image" content="https://tudominio.com/img/og-image.jpg">
+
+  <!-- Fonts / CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../output.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body class="antialiased selection:bg-[#5B4FD7] selection:text-white">
 <div id="top"></div>
 
     <!-- PRELOADER -->
-    <div id="preloader">
+    <div id="preloader" aria-hidden="true">
         <div class="text-6xl font-display font-bold mb-4 tracking-tighter" id="loader-text">0%</div>
         <div class="loader-bar"><div class="loader-progress" id="loader-progress"></div></div>
         <div class="mt-6 text-xs tracking-[0.25em] uppercase text-neutral-500 font-mono">
-          Tubepilotpro Studio
+          Pilot Web Studio
         </div>
     </div>
 
     <!-- UI OVERLAYS -->
-    <div class="noise-overlay"></div>
-    <div class="cursor-dot"></div>
-    <div class="cursor-circle"></div>
-    <div id="progress-bar" class="fixed top-0 left-0 h-[2px] bg-[#5B4FD7] z-[100] w-0 transition-all duration-100 ease-linear"></div>
-    <div id="toast">Código copiado</div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-circle" aria-hidden="true"></div>
+    <div id="progress-bar" class="fixed top-0 left-0 h-[2px] bg-[#5B4FD7] z-[100] w-0 transition-all duration-100 ease-linear" aria-hidden="true"></div>
+    <div id="toast" role="status" aria-live="polite">Código copiado</div>
 
-    <!-- NAVIGATION -->
-    <nav class="fixed w-full z-50 px-8 py-6 flex justify-between items-center mix-blend-difference text-white">
-        <a
-  href="#top"
-  class="hoverable font-display font-bold text-xl tracking-tighter
-         inline-flex items-center no-underline select-none"
-  style="text-decoration: none;"
->
-  Tubepilotpro
-</a>
+  <!-- NAVIGATION -->
+<nav class="fixed w-full z-50 px-6 md:px-8 py-6 flex justify-between items-center mix-blend-difference text-white" aria-label="Navegación principal">
+  <a
+   href="#hero"
+   class="hoverable font-display font-bold text-xl tracking-tighter inline-flex items-center no-underline select-none"
+  >
+    Pilot Web Studio
+  </a>
 
-        <div class="hidden md:flex gap-8 text-sm font-medium tracking-wide">
-            <a href="#work" class="hoverable opacity-60 hover:opacity-30 transition-opacity">SERVICIOS</a>
-            <a href="#repository" class="hoverable opacity-60 hover:opacity-30 transition-opacity">LIBRERÍA</a>
-        </div>
-        <a href="#contact" class="hoverable border border-white/30 px-6 py-2 rounded-full text-xs uppercase tracking-widest bg-white/0 hover:bg-white hover:text-black transition-colors">
-  Contacto
-</a>
+  <div class="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+    <a
+      href="#servicios"
+      class="hoverable relative opacity-70 hover:opacity-100 transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+    >
+      SERVICIOS
+    </a>
 
-    </nav>
+    <a
+      href="#portfolio"
+      class="hoverable relative opacity-70 hover:opacity-100 transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+    >
+      PORTFOLIO
+    </a>
+
+    <a
+      href="#proceso"
+      class="hoverable relative opacity-70 hover:opacity-100 transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+    >
+      PROCESO
+    </a>
+  </div>
+
+  <a
+    href="#contacto"
+    class="hoverable border border-white/30 px-6 py-2 rounded-full text-xs uppercase tracking-widest bg-white/0 hover:bg-white hover:text-black transition-colors"
+  >
+    Contacto
+  </a>
+</nav>
 
     <!-- CONTENT WRAPPER -->
     <main class="main-content">
         
-       <!-- HERO -->
-<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+       <!-- HERO --> 
+<header id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
 
   <!-- CONTENEDOR FONDO ANIMADO (p5 / canvas / etc) -->
-  <div id="hero-background" class="absolute inset-0 z-0 pointer-events-none"></div>
+  <div id="hero-background" class="absolute inset-0 z-0 pointer-events-none" aria-hidden="true"></div>
 
   <!-- OVERLAY OSCURO PARA LEGIBILIDAD -->
-  <div class="absolute inset-0 z-10 bg-gradient-to-t from-[#050505] via-black/40 to-black/10"></div>
+  <div class="absolute inset-0 z-10 bg-gradient-to-t from-[#050505] via-black/40 to-black/10" aria-hidden="true"></div>
 
   <!-- CONTENIDO -->
   <div class="relative z-20 text-center px-6">
@@ -82,64 +122,78 @@
         class="reveal-item fade-scale border border-white/10 bg-white/5 backdrop-blur-md
                px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] text-neutral-300"
       >
-        Landing Design Studio
+        Diseño web con enfoque en conversión
       </div>
     </div>
 
     <h1 
-  class="group font-display text-7xl md:text-9xl font-bold
-         leading-[0.85] tracking-tighter mix-blend-overlay
-         transition-colors duration-500 hover:text-[#A396FF]"
->
-  <span class="block split-line">
-    <span>DISEÑO WEB & LANDINGS</span>
-  </span>
-  <span class="block split-line" style="transition-delay: 0.1s;">
-    <span>QUE CONVIERTEN</span>
-  </span>
-</h1>
+      class="group font-display text-5xl mx-auto md:text-7xl lg:text-8xl font-bold
+             leading-[0.9] tracking-tighter mix-blend-overlay
+             transition-colors duration-500 hover:text-[#A396FF]"
+    >
+      <span class="block split-line">
+      <span>WEBS QUE NO PARECEN</span>
+      </span>
+      <span class="block split-line">
+      <span>GENÉRICAS.</span>
+      </span>
+      <span class="block split-line">
+      <span>Y QUE SÍ CONSIGUEN CLIENTES.</span>
+      </span>
+    </h1>
 
-
-
-<p
-  class="mt-8 text-lg md:text-xl text-neutral-300 max-w-xl mx-auto
+    <p
+      class="mt-10 text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto
+             reveal-item fade-up"
+      style="transition-delay: 0.3s;"
+    >
+      Diseñamos webs y landings pensadas para convertir visitas en clientes,
+con estructura clara y una estética que posiciona tu marca.
+    </p>
+    <p
+      class="mt-4 text-xs md:text-sm text-neutral-400 max-w-xl mx-auto
          reveal-item fade-up"
-  style="transition-delay: 0.3s;"
->
-  Diseñamos páginas para que
-  <span class="text-white hoverable border-b border-white/50">
-    TubePilotPro
-  </span>
-  convierta visitas en clientes, en piloto automático.
-</p>
-
+       style="transition-delay: 0.38s;"
+    >
+    Para negocios y profesionales que quieren una web con intención, no solo presencia.
+    </p>
 <!-- BOTONES HERO -->
 <div
-  class="mt-8 flex flex-wrap justify-center gap-4
-         reveal-item fade-up"
+  class="mt-8 flex flex-wrap justify-center gap-4 reveal-item fade-up"
   style="transition-delay: 0.45s;"
 >
-  
-  <!-- Botón 1: ir a servicios -->
+  <!-- CTA PRINCIPAL -->
   <a
-    href="#work"
-    class="inline-flex items-center justify-center gap-2
-           px-6 md:px-8 py-2.5 md:py-3 rounded-full
-           border border-white/20
-           bg-gradient-to-r from-[#5B4FD7]/60 to-[#8E8DDB]/60
-           backdrop-blur-md
+    href="#contacto"
+    aria-label="Solicitar información para crear mi página web"
+    class="group relative inline-flex items-center justify-center gap-2
+           px-7 md:px-9 py-3 md:py-3.5 rounded-full
            text-xs md:text-sm font-medium tracking-[0.18em] uppercase
            text-white
-           transition-all duration-300
-           hover:bg-gradient-to-r hover:from-[#5B4FD7]/80 hover:to-[#8E8DDB]/80
-           hover:-translate-y-0.5 hover:shadow-[0_18px_45px_rgba(0,0,0,0.7)]"
+           bg-gradient-to-r from-[#5B4FD7] to-[#8E8DDB]
+           shadow-[0_10px_30px_rgba(91,79,215,0.4)]
+           transition-all duration-300 ease-out
+           hover:shadow-[0_20px_60px_rgba(91,79,215,0.6)]
+           hover:-translate-y-1
+           hover:scale-[1.03]
+           active:scale-[0.98]
+           before:absolute before:inset-0 before:rounded-full
+           before:bg-white/10 before:opacity-0
+           before:transition-opacity before:duration-300
+           hover:before:opacity-100"
   >
-    Ver servicios
+    <span class="relative z-10 flex items-center gap-2">
+      Solicitar mi web
+      <span class="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">
+        →
+      </span>
+    </span>
   </a>
 
-  <!-- Botón 2: ir a librería / ejemplos -->
+  <!-- CTA SECUNDARIO -->
   <a
-    href="#repository"
+    href="#portfolio"
+    aria-label="Ver proyectos y ejemplos reales de páginas web"
     class="inline-flex items-center justify-center gap-2
            px-6 md:px-8 py-2.5 md:py-3 rounded-full
            border border-white/15
@@ -151,1005 +205,645 @@
            hover:bg-white/10 hover:text-white
            hover:-translate-y-0.5 hover:shadow-[0_18px_45px_rgba(0,0,0,0.6)]"
   >
-    Ver ejemplos reales
+    Ver proyectos reales
   </a>
 </div>
-  </div>
+ </div>
 </header>
 
-<!-- SECTION 1: GRID -->
+<!-- SECTION 1: PROBLEMA -->
 <section
-  id="flujo"
-  class="py-32 px-6 md:px-12 bg-[#050505] border-t border-white/5 relative overflow-hidden"
+  id="problema"
+  class="py-24 md:py-28 px-6 md:px-12 bg-[#050505] border-t border-white/5 relative overflow-hidden"
 >
-  <!-- Fondo animado tipo red de puntos -->
+  <!-- Fondo animado -->
   <canvas id="work-canvas" class="absolute inset-0 w-full h-full"></canvas>
-  <!-- Overlay para contraste -->
+
+ <!-- Overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#050505]/95 to-black/90 pointer-events-none"></div>
+
+<div class="relative z-10">
+  <!-- LABEL -->
+  <div class="px-6 md:px-12">
+    <div class="section-label">[ 01. EL PROBLEMA ]</div>
+  </div>
+
+    <!-- CABECERA -->
+    <div class="max-w-4xl mx-auto text-center mb-16 md:mb-20">
+      <p class="text-[11px] uppercase tracking-[0.24em] text-neutral-500 mb-4 reveal-item fade-up">
+        Muchas webs fallan en lo básico
+      </p>
+
+      <h2
+        class="reveal-item fade-up text-4xl md:text-6xl font-display font-bold leading-[0.95] tracking-tighter text-white"
+        style="transition-delay: 0.08s;"
+      >
+        El problema no es que una web se vea mal.
+        <br class="hidden md:block">
+        Es que muchas no están pensadas para convertir.
+      </h2>
+
+      <p
+        class="reveal-item fade-up mt-6 text-base md:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed"
+        style="transition-delay: 0.18s;"
+      >
+        Hay webs que cumplen visualmente, pero no dejan claro qué hacer, no ordenan bien el mensaje
+        y no convierten visitas en llamadas, reservas o clientes.
+      </p>
+    </div>
+
+    <!-- GRID DE PROBLEMAS -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <!-- CARD 1 -->
+      <article
+        class="reveal-item fade-scale group rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-7
+               backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#5B4FD7]/40 hover:bg-white/[0.05]"
+      >
+        <div class="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 group-hover:border-[#A396FF]/30 group-hover:bg-white/10">
+         <svg class="w-5 h-5 text-[#A396FF] transition-all duration-300 group-hover:scale-110 group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M10.733 5.076A10.744 10.744 0 0 1 12 5c5 0 9 4 10 7a11.8 11.8 0 0 1-1.676 2.724" />
+           <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+           <path d="M17.479 17.499A10.75 10.75 0 0 1 12 19c-5 0-9-4-10-7a11.8 11.8 0 0 1 4.52-5.48" />
+           <path d="m2 2 20 20" />
+          </svg>
+        </div>
+
+        <h3 class="text-xl md:text-2xl font-semibold text-white mb-3">
+          Se ven bien, pero no guían
+        </h3>
+
+        <p class="text-sm md:text-base text-neutral-400 leading-relaxed">
+          El usuario entra, mira, hace scroll… y no entiende cuál es el siguiente paso.
+          Sin dirección clara, no hay acción.
+        </p>
+      </article>
+
+      <!-- CARD 2 -->
+      <article
+        class="reveal-item fade-scale group rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-7
+               backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#5B4FD7]/40 hover:bg-white/[0.05]"
+        style="transition-delay: 0.08s;"
+      >
+        <div class="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 group-hover:border-[#A396FF]/30 group-hover:bg-white/10">
+          <svg class="w-5 h-5 text-[#A396FF] transition-all duration-300 group-hover:scale-110 group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" />
+           <path d="M18 9h2a2 2 0 0 1 2 2v10l-4-4h-6a2 2 0 0 1-2-2v-1" />
+          </svg>
+        </div>
+
+        <h3 class="text-xl md:text-2xl font-semibold text-white mb-3">
+          Dicen mucho, pero no convencen
+        </h3>
+
+        <p class="text-sm md:text-base text-neutral-400 leading-relaxed">
+          Mensajes genéricos, secciones sin jerarquía y CTAs mal colocados hacen que el valor real
+          del negocio se diluya.
+        </p>
+      </article>
+
+      <!-- CARD 3 -->
+      <article
+        class="reveal-item fade-scale group rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-7
+               backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#5B4FD7]/40 hover:bg-white/[0.05]"
+        style="transition-delay: 0.16s;"
+      >
+        <div class="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 group-hover:border-[#A396FF]/30 group-hover:bg-white/10">
+          <svg class="w-5 h-5 text-[#A396FF] transition-all duration-300 group-hover:scale-110 group-hover:text-white"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="1.8"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           aria-hidden="true"
+          >
+          <circle cx="12" cy="12" r="8"></circle>
+           <path d="M8.5 8.5l7 7"></path>
+           <path d="M15.5 8.5l-7 7"></path>
+         </svg>
+        </div>
+
+        <h3 class="text-xl md:text-2xl font-semibold text-white mb-3">
+          Están hechas para “estar”
+        </h3>
+
+        <p class="text-sm md:text-base text-neutral-400 leading-relaxed">
+          Tener web no basta. Si no está diseñada para generar reservas, contactos o ventas,
+          se convierte en una presencia vacía.
+        </p>
+      </article>
+    </div>
+
+    <!-- CIERRE -->
+    <div class="max-w-3xl mx-auto text-center mt-14 md:mt-16">
+      <p
+        class="reveal-item fade-up text-sm md:text-base text-neutral-300 leading-relaxed"
+        style="transition-delay: 0.22s;"
+      >
+        Por eso no diseñamos webs para “rellenar secciones”, sino para que cada bloque tenga una función
+        y acerque al usuario a una decisión.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: ENFOQUE -->
+<section
+  id="enfoque"
+  class="py-24 md:py-28 px-6 md:px-12 bg-[#050505] border-t border-white/5 relative overflow-hidden"
+>
+  <!-- Overlay -->
   <div class="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#050505]/95 to-black/90 pointer-events-none"></div>
 
   <div class="relative z-10">
-    <div class="section-label">[ 01. LANDING SHOWCASE ]</div>
+    <!-- LABEL -->
+    <div class="px-6 md:px-12">
+      <div class="section-label">[ 02. EL ENFOQUE ]</div>
+    </div>
 
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Fluidity (Zoom & Focus - Cinematic Reveal) -->
-      <div class="group cursor-pointer hoverable relative overflow-hidden rounded-lg aspect-[3/4]">
-        <img
-          src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2600&auto=format&fit=crop"
-          class="absolute inset-0 w-full h-full object-cover img-zoom-bw"
-          alt="Landing Premium"
+    <div class="max-w-7xl mx-auto">
+      <!-- CABECERA -->
+      <div class="max-w-4xl mx-auto text-center mb-16 md:mb-20">
+        <p class="text-[11px] uppercase tracking-[0.24em] text-neutral-500 mb-4 reveal-item fade-up">
+          Diseño, estructura y conversión
+        </p>
+
+        <h2
+          class="reveal-item fade-up text-4xl md:text-6xl font-display font-bold leading-[0.95] tracking-tighter text-white"
+          style="transition-delay: 0.08s;"
         >
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-        <div class="absolute bottom-6 left-6 z-30">
-          <h3 class="text-xl font-medium text-white">Hero de impacto</h3>
-          <p class="text-xs text-neutral-400">Primera impresión que vende</p>
-        </div>
+          No diseñamos webs para rellenar secciones.
+          <br class="hidden md:block">
+          Las diseñamos para que el usuario actúe.
+        </h2>
+
+        <p
+          class="reveal-item fade-up mt-6 text-base md:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed"
+          style="transition-delay: 0.18s;"
+        >
+          Cada proyecto parte de una idea simple: una web no debería limitarse a verse bien.
+          Tiene que dejar claro qué haces, transmitir confianza y guiar al usuario hacia una acción concreta.
+        </p>
       </div>
 
-      <!-- Parallax Lag -->
-      <div class="md:mt-24 group cursor-pointer hoverable parallax-bg" data-speed="0.05">
-        <div class="reveal-item fade-scale aspect-[3/4] rounded-lg overflow-hidden mb-6 relative">
+      <!-- GRID PRINCIPAL -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-stretch">
+        <!-- CARD GRANDE IZQUIERDA -->
+        <article
+          class="lg:col-span-7 reveal-item fade-scale group relative overflow-hidden rounded-2xl border border-white/10 min-h-[420px] md:min-h-[520px]"
+        >
           <img
-            src="https://images.unsplash.com/photo-1506729623306-b5a934d88b53?q=80&w=2670&auto=format&fit=crop"
-            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70"
-            alt="Landing Funnel"
+            src="/img/enfoque1.png"
+            alt="Estrategia web enfocada a conversión"
+            class="absolute inset-0 w-full h-full object-cover opacity-55 transition-transform duration-700 group-hover:scale-105"
           >
-          <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
-        </div>
-        <h3 class="text-xl font-medium">Flujo pensado</h3>
-        <p class="text-xs text-neutral-500">Cada sección con propósito</p>
-      </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-      <!-- 3D Tilt -->
-      <div class="group cursor-pointer hoverable tilt-card-wrapper">
-        <div
-          class="tilt-card aspect-[3/4] rounded-lg mb-6 bg-neutral-900 border border-white/5 relative overflow-hidden flex items-center justify-center"
+          <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
+                         bg-white/10 text-white/80 border border-white/20 mb-4">
+              01 · Estrategia antes que decoración
+            </span>
+
+            <h3 class="text-2xl md:text-4xl font-semibold text-white mb-4 leading-tight">
+              La estructura importa más de lo que parece
+            </h3>
+
+            <p class="text-sm md:text-base text-neutral-200 max-w-2xl leading-relaxed">
+              Antes de pensar en animaciones o estilos, definimos qué tiene que entender el usuario,
+              qué objeciones hay que resolver y qué acción queremos provocar: escribirte, reservar o comprar.
+            </p>
+          </div>
+        </article>
+
+        <!-- CARD DERECHA SUPERIOR -->
+        <article
+          class="lg:col-span-5 reveal-item fade-scale glass-panel min-h-[250px] md:min-h-[255px]"
+          style="transition-delay: 0.08s;"
+        >
+          <p class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mb-4">
+            Pilar 1 · Claridad
+          </p>
+
+          <h3
+            class="text-2xl md:text-3xl font-bold leading-tight mb-4 transition-colors duration-500 hover:text-[#A396FF]"
+          >
+            Mensaje claro desde el primer scroll
+          </h3>
+
+          <p class="text-sm md:text-base text-neutral-200 leading-relaxed mb-6">
+            Una buena web no obliga al usuario a adivinar. Ordenamos el mensaje para que entienda
+            qué ofreces, por qué debería confiar y cuál es el siguiente paso.
+          </p>
+
+          <ul class="text-xs md:text-sm text-neutral-400 space-y-2">
+            <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+              · Jerarquía visual que guía la lectura
+            </li>
+            <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+              · Mensajes directos y sin ruido
+            </li>
+            <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+              · CTAs colocados donde tienen sentido
+            </li>
+          </ul>
+        </article>
+
+        <!-- CARD IZQUIERDA INFERIOR -->
+        <article
+          class="lg:col-span-5 reveal-item fade-scale glass-panel min-h-[250px] md:min-h-[255px]"
+          style="transition-delay: 0.16s;"
+        >
+          <p class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mb-4">
+            Pilar 2 · Diferenciación visual
+          </p>
+
+          <h3
+            class="text-2xl md:text-3xl font-bold leading-tight mb-4 transition-colors duration-500 hover:text-[#A396FF]"
+          >
+            Premium, sí. Genérica, no.
+          </h3>
+
+          <p class="text-sm md:text-base text-neutral-200 leading-relaxed mb-6">
+            Buscamos un acabado visual cuidado, pero sin perder claridad ni rendimiento.
+            La estética acompaña al objetivo: reforzar la marca y hacer que la web se recuerde.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="glass-subcard h-full flex flex-col justify-between">
+              <div class="text-[11px] uppercase tracking-[0.18em] text-neutral-500 mb-2">
+                Visual premium
+              </div>
+              <p class="text-xs text-neutral-300 leading-snug">
+                Diseño a medida, ritmo visual y detalles que elevan la percepción del proyecto.
+              </p>
+            </div>
+
+            <div class="glass-subcard h-full flex flex-col justify-between">
+              <div class="text-[11px] uppercase tracking-[0.18em] text-neutral-500 mb-2">
+                Interacción medida
+              </div>
+              <p class="text-xs text-neutral-300 leading-snug">
+                Animaciones y microinteracciones que acompañan la experiencia sin distraer.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD GRANDE DERECHA -->
+        <article
+          class="lg:col-span-7 reveal-item fade-scale group relative overflow-hidden rounded-2xl border border-white/10 min-h-[420px] md:min-h-[520px]"
+          style="transition-delay: 0.24s;"
         >
           <img
-            src="https://images.unsplash.com/photo-1604871000636-074fa5117945?q=80&w=2487&auto=format&fit=crop"
-            class="absolute inset-0 w-full h-full object-cover opacity-50"
-            alt="Responsive Design"
+            src="/img/enfoque2.png"
+            alt="Web enfocada a conversión y resultados"
+            class="absolute inset-0 w-full h-full object-cover opacity-55 transition-transform duration-700 group-hover:scale-105"
           >
-          <div class="tilt-inner text-center z-20 mix-blend-difference">
-            <i data-lucide="box" class="w-12 h-12 mx-auto mb-4 text-white"></i>
-            <span class="text-sm tracking-widest uppercase text-white">Diseño responsivo</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+          <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
+                         bg-white/10 text-white/80 border border-white/20 mb-4">
+              02 · Conversión y rendimiento
+            </span>
+
+            <h3 class="text-2xl md:text-4xl font-semibold text-white mb-4 leading-tight">
+              La web tiene que generar una acción real
+            </h3>
+
+            <p class="text-sm md:text-base text-neutral-200 max-w-2xl leading-relaxed">
+              Todo se construye para acercar al usuario a una decisión: reservar, escribirte,
+              pedir información o avanzar hacia una venta. Si no mueve al usuario, no está cumpliendo su función.
+            </p>
           </div>
-        </div>
-        <h3 class="text-xl font-medium">Perfecto en cualquier pantalla</h3>
-        <p class="text-xs text-neutral-500">Mouse tracking & microinteracciones</p>
+        </article>
       </div>
     </div>
   </div>
 </section>
 
-
-       <!-- SECTION 2: HORIZONTAL -->
-<section id="process" class="horizontal-section bg-[#050505]">
-  <div class="section-label">[ 02. PROCESO DE DISEÑO ]</div>
-
-  <div class="sticky top-0 h-screen overflow-hidden flex items-center">
-    <div id="horizontal-track" class="flex gap-24 px-12 md:px-32 will-change-transform items-center">
-
-      <!-- BLOQUE TITULAR + COPY + CTA -->
-      <div class="w-[90vw] md:w-[720px] flex-shrink-0 space-y-8">
-        <h2 class="text-6xl md:text-8xl font-display font-bold leading-none text-transparent bg-clip-text bg-gradient-to-br from-[#5B4FD7] to-[#8E8DDB]">
-  Estrategia y UX<br>para tu Landing
-</h2>
-
-
-        <p class="text-sm md:text-base text-neutral-200 leading-relaxed glass-panel max-w-xl">
-
-  Alineo el diseño con los objetivos de negocio: defino el embudo, simplifico los puntos de fricción
-  y preparo una experiencia pensada para convertir, no solo para “verse bonita”.
-</p>
-
-
-        <div class="flex flex-wrap items-center gap-4">
-          <button
-            class="px-6 py-3 rounded-full border border-white/10 text-sm font-medium tracking-wide
-                   bg-white/5 hover:bg-white/10 hover:-translate-y-0.5
-                   transition-all duration-300">
-            Ver proceso completo
-          </button>
-          <a
-  href="https://calendar.app.google/BLbyJpjmMpm3bWhw9"
-  target="_blank"
-  rel="noopener noreferrer"
-  data-cta="schedule-call"
-  class="px-6 py-3 rounded-full text-sm font-medium tracking-wide text-neutral-300
-         border border-transparent hover:border-white/10 hover:bg-white/5
-         transition-all duration-300"
+<!-- SECTION 3: STATS -->
+<section id="servicios"
+  class="py-20 bg-[#050505] border-t border-white/5 border-b relative"
 >
-  Agendar una llamada →
-</a>
+  <div class="section-label">[ 03. SERVICIOS CLAVE ]</div>
 
+  <div class="glass-card-premium max-w-5xl mx-auto px-6 md:px-10 mb-10 text-center p-8 md:p-12
+            transition-all duration-500 hover:-translate-y-1">
 
-          <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[11px] uppercase tracking-[0.18em]
-                   border border-white/10 text-neutral-400 bg-white/5/10">
-            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            Tiempo medio: 3–5 semanas
-          </span>
-        </div>
-      </div>
+  <p class="text-[11px] tracking-[0.24em] uppercase text-neutral-400 mb-3">
+    Servicios enfocados en conversión y presencia digital
+  </p>
 
-      <!-- PASO 01: INVESTIGACIÓN & ESTRATEGIA -->
-      <div
-        class="w-[70vw] md:w-[60vw] aspect-video flex-shrink-0 relative rounded-xl overflow-hidden border border-white/10 group hoverable">
-        <img
-          src="https://i.imgur.com/NXOYo6a.jpeg"
-          class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
-          alt="Investigación y estrategia UX">
-        <!-- Overlay -->
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent
-                 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
-        </div>
-        <div class="absolute bottom-5 left-5 right-5 space-y-2">
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
-                       bg-white/10 text-white/80 border border-white/20">
-            Paso 01 · Investigación & estrategia
-          </span>
-          <p class="text-sm text-neutral-200 max-w-lg">
-            Entrevistas rápidas, análisis de datos y revisión de competidores para entender qué espera tu usuario
-            al aterrizar en la web.
-          </p>
-        </div>
-      </div>
-
-      <!-- BLOQUE TEXTO: EMBUDO CLARO -->
-<div class="w-[60vw] md:w-[420px] flex-shrink-0 px-4 md:px-0">
-  <div class="glass-panel h-full flex flex-col justify-between">
-
-    <!-- Parte superior: etiqueta + título + texto -->
-    <div class="space-y-4">
-      <p class="text-[11px] tracking-[0.2em] uppercase text-neutral-500">
-        Capa 1 · Embudo
-      </p>
-
-      <h3
-        class="text-3xl md:text-4xl font-bold leading-tight
-               transition-colors duration-500 hover:text-[#A396FF]"
-      >
-        Embudo claro
-      </h3>
-
-      <p class="text-sm md:text-base text-neutral-200 leading-relaxed">
-        Del click al cliente con el mínimo de fricción. Cada sección tiene un objetivo
-        y un siguiente paso evidente para el usuario.
-      </p>
-    </div>
-
-    <!-- Parte inferior: lista -->
-    <div class="mt-6 pt-4 border-t border-white/5">
-      <ul class="text-xs md:text-sm text-neutral-400 space-y-1.5">
-        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
-          · Mensajes clave por etapa del funnel
-        </li>
-        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
-          · CTA estratégicos, no invasivos
-        </li>
-        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
-          · Flujo pensado para tráfico frío y caliente
-        </li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-
-      <!-- PASO 02: ARQUITECTURA & FLOWS -->
-      <div
-        class="w-[70vw] md:w-[60vw] aspect-video flex-shrink-0 relative rounded-xl overflow-hidden border border-white/10 group hoverable">
-        <img
-          src="https://i.imgur.com/jWJvwPQ.jpeg"
-          class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
-          alt="Arquitectura de la información">
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent
-                 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
-        </div>
-        <div class="absolute bottom-5 left-5 right-5 space-y-2">
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
-                       bg-white/10 text-white/80 border border-white/20">
-            Paso 02 · Arquitectura & user flows
-          </span>
-          <p class="text-sm text-neutral-200 max-w-lg">
-            Ordeno la información para que el usuario siempre sepa dónde está, qué viene después y qué gana
-            si sigue avanzando.
-          </p>
-        </div>
-      </div>
-
-      <!-- PASO 03: WIREFRAMES INTERACTIVOS -->
-      <div
-        class="w-[70vw] md:w-[60vw] aspect-video flex-shrink-0 relative rounded-xl overflow-hidden border border-white/10 group hoverable">
-        <img
-          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2600&auto=format&fit=crop"
-          class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
-          alt="Wireframes interactivos">
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent
-                 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
-        </div>
-        <div class="absolute bottom-5 left-5 right-5 space-y-2">
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
-                       bg-white/10 text-white/80 border border-white/20">
-            Paso 03 · Wireframes de alta intención
-          </span>
-          <p class="text-sm text-neutral-200 max-w-lg">
-            Prototipos rápidos para validar estructura, mensajes y jerarquía visual antes de invertir en el diseño final.
-          </p>
-        </div>
-      </div>
-
-     <!-- PASO 04: UI & SISTEMA VISUAL -->
-<div class="w-[80vw] md:w-[560px] flex-shrink-0 relative pl-10 md:pl-20">
-
-  <!-- Línea vertical -->
-  <span class="absolute left-0 top-0 h-full w-px bg-white/10"></span>
-
-  <!-- Glass principal -->
-  <div class="glass-panel flex flex-col gap-6 py-8">
-<!-- Eyebrow -->
-  <p class="text-[11px] tracking-[0.2em] uppercase text-neutral-500">
-        Capa 2 · Parte Visual
-      </p>
-    <!-- Header -->
-    <div class="space-y-3">
-      <h3
-        class="text-3xl md:text-4xl font-bold leading-tight transition-colors duration-500 hover:text-[#A396FF]"
-      >
-        Sistema visual
-      </h3>
-
-      <p class="text-sm md:text-base text-neutral-200 leading-relaxed max-w-md">
-        Creo una interfaz coherente y consistente: tipografías, colores, componentes y
-        estados que refuerzan la marca y la convierten en algo memorable.
-      </p>
-    </div>
-
-    <!-- Sub-cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-
-      <!-- Card 01 -->
-      <div
-        class="glass-subcard h-full flex flex-col justify-between"
-      >
-        <div class="text-[11px] uppercase tracking-[0.18em] text-neutral-500 mb-2">
-          Componentes
-        </div>
-        <p class="text-xs text-neutral-300 leading-snug">
-          Botones, cards, badges, formularios… todos con la misma lógica.
-        </p>
-      </div>
-
-      <!-- Card 02 -->
-      <div
-        class="glass-subcard h-full flex flex-col justify-between"
-      >
-        <div class="text-[11px] uppercase tracking-[0.18em] text-neutral-500 mb-2">
-          Microinteracciones
-        </div>
-        <p class="text-xs text-neutral-300 leading-snug">
-          Feedback sutil que guía, pero no distrae.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-      <!-- PASO 04: ENTREGA & OPTIMIZACIÓN -->
-      <div
-        class="w-[70vw] md:w-[60vw] aspect-video flex-shrink-0 relative rounded-xl overflow-hidden border border-white/10 group hoverable">
-        <img
-          src="https://i.imgur.com/pDh7Fa7.jpeg"
-          class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
-          alt="Entrega y optimización de la landing">
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent
-                 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
-        </div>
-        <div class="absolute bottom-5 left-5 right-5 space-y-2">
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
-                       bg-white/10 text-white/80 border border-white/20">
-            Paso 04 · Entrega & optimización
-          </span>
-          <p class="text-sm text-neutral-200 max-w-lg">
-            Entrego diseños listos para desarrollo, junto con notas de interacción y propuestas de tests A/B para
-            seguir mejorando las conversiones.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- SECTION 3: STICKY STACK -->
-<section class="py-32 px-6 md:px-12 bg-[#050505] border-t border-white/5 relative">
-  <div class="section-label relative z-10">[ 03. LANDINGS EN CAPAS ]</div>
-
-  <!-- Fondo (recortado sin romper sticky) -->
-  <div class="absolute inset-0 overflow-hidden">
-   <canvas id="network-canvas" class="absolute inset-0 w-full h-full"></canvas>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40 pointer-events-none"></div>
-  </div>
-
-  <div class="max-w-7xl mx-auto sticky-wrapper gap-20 flex-col md:flex-row relative z-10">
-    <!-- COLUMNA IZQUIERDA (STICKY) -->
-    <div class="md:w-1/3 sticky-content pb-20">
-      <h2 class="text-4xl md:text-6xl font-display font-bold leading-[0.9] mb-8 transition-colors duration-500 hover:text-[#A396FF]">
-        Páginas<br>que escalan tu negocio
-      </h2>
-      <p
-  class="text-neutral-400 text-lg leading-relaxed mb-6
-         transition-colors duration-500
-         hover:text-[#A396FF]"
->
-  Desde la primera landing hasta un ecosistema completo de páginas para TubePilotPro:
-  captación, venta, onboarding y retención.
-</p>
-
-
-      <!-- CAPAS DEL SISTEMA -->
-      <div class="space-y-5 mb-10">
-        <!-- Capa -->
-        <div class="group flex gap-3 items-start transition-all duration-500 hover:translate-x-2">
-          <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400 transition-transform duration-300 group-hover:scale-150"></span>
-          <div>
-            <p class="text-sm font-medium text-neutral-200 transition-colors group-hover:text-white">
-              Capa 1 · Captación
-            </p>
-            <p class="text-sm text-neutral-500 transition-colors group-hover:text-neutral-300">
-              Landings pensadas para transformar tráfico frío en leads interesados.
-            </p>
-          </div>
-        </div>
-
-        <div class="group flex gap-3 items-start transition-all duration-500 hover:translate-x-2">
-          <span class="mt-1 h-1.5 w-1.5 rounded-full bg-[#5B4FD7] transition-transform duration-300 group-hover:scale-150"></span>
-          <div>
-            <p class="text-sm font-medium text-neutral-200 transition-colors group-hover:text-white">
-              Capa 2 · Conversión
-            </p>
-            <p class="text-sm text-neutral-500 transition-colors group-hover:text-neutral-300">
-              Páginas de venta y ofertas principales optimizadas para cerrar la venta.
-            </p>
-          </div>
-        </div>
-
-        <div class="group flex gap-3 items-start transition-all duration-500 hover:translate-x-2">
-          <span class="mt-1 h-1.5 w-1.5 rounded-full bg-amber-300 transition-transform duration-300 group-hover:scale-150"></span>
-          <div>
-            <p class="text-sm font-medium text-neutral-200 transition-colors group-hover:text-white">
-              Capa 3 · Retención & upsell
-            </p>
-            <p class="text-sm text-neutral-500 transition-colors group-hover:text-neutral-300">
-              Onboarding, áreas privadas y micro-embudos para aumentar el LTV.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- FLUJO -->
-      <div class="group rounded-2xl border border-white/10 bg-white/[0.02] p-4 space-y-3">
-        <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">
-          Flujo típico de un cliente
-        </p>
-
-        <div class="flex flex-wrap items-center gap-2 text-xs text-neutral-200">
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 transition hover:bg-white/10">
-            Vídeo / anuncio
-          </span>
-          <span class="text-neutral-500 transition-transform group-hover:translate-x-1">→</span>
-
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 transition hover:bg-white/10">
-            Landing de captación
-          </span>
-          <span class="text-neutral-500 transition-transform group-hover:translate-x-1">→</span>
-
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 transition hover:bg-white/10">
-            Página de venta
-          </span>
-          <span class="text-neutral-500 transition-transform group-hover:translate-x-1">→</span>
-
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 transition hover:bg-white/10">
-            Onboarding & área privada
-          </span>
-        </div>
-      </div>
-    </div>
-
-  <!-- STACK DERECHO -->
-    <div class="md:w-2/3 flex flex-col gap-28 pt-20">
-
-      <!-- CARD (patrón) -->
-      <div class="reveal-item fade-scale group aspect-[16/9] rounded-2xl overflow-hidden relative
-                  bg-neutral-900/80 border border-white/10 backdrop-blur-sm
-                  transition-all duration-700 ease-out
-                  hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(0,0,0,0.9)]">
-        
-        <img
-          src="https://i.imgur.com/id3mByf.jpeg"
-          class="w-full h-full object-cover opacity-60
-                 transition-transform duration-[900ms] ease-out
-                 group-hover:scale-[1.05] group-hover:opacity-100"
-        >
-
-        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent transition-opacity duration-700 group-hover:opacity-90"></div>
-
-        <div class="absolute top-4 left-4 text-[11px] uppercase tracking-[0.24em] text-white/60">
-          01 · Captación de leads
-        </div>
-
-        <div class="absolute bottom-4 left-4 right-4">
-          <p class="text-xs uppercase tracking-[0.2em] text-white/70 mb-2">
-            Lead magnet, opt-in y primera oferta
-          </p>
-          <p class="text-sm text-neutral-200 max-w-lg">
-            Landings pensadas para tráfico frío: promesa clara, prueba social y un solo siguiente paso evidente.
-          </p>
-        </div>
-      </div>
-
-      <!-- CARD 02 · VENTA -->
-      <div
-        class="reveal-item fade-scale aspect-[16/9] rounded-2xl overflow-hidden relative group
-               bg-neutral-900/80 border border-white/10 backdrop-blur-sm
-               transition-transform duration-500 ease-out
-               hover:-translate-y-3 hover:shadow-[0_24px_70px_rgba(0,0,0,0.85)]"
-      >
-        <img
-          src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2600&auto=format&fit=crop"
-          class="w-full h-full object-cover opacity-60 group-hover:opacity-100
-                 transition-opacity duration-700"
-          alt="Landing Venta Cursos"
-        >
-        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent"></div>
-
-        <div class="absolute top-4 left-4 text-[11px] uppercase tracking-[0.24em] text-white/60">
-          02 · Venta de cursos & programas
-        </div>
-
-        <div class="absolute bottom-4 left-4 right-4">
-          <p class="text-xs uppercase tracking-[0.2em] text-white/70 mb-2">
-            Oferta principal, garantías y FAQs
-          </p>
-          <p class="text-sm text-neutral-200 max-w-lg">
-            Páginas de venta que ordenan la historia, resuelven objeciones y muestran el valor real
-            antes de pedir el clic al checkout.
-          </p>
-        </div>
-      </div>
-
-      <!-- CARD 03 · ONBOARDING & UPSELLS -->
-      <div
-        class="reveal-item fade-scale aspect-[16/9] rounded-2xl overflow-hidden relative group
-               bg-neutral-900/80 border border-white/10 backdrop-blur-sm
-               transition-transform duration-500 ease-out
-               hover:-translate-y-3 hover:shadow-[0_24px_70px_rgba(0,0,0,0.85)]"
-      >
-        <img
-          src="https://i.imgur.com/Il7Ygma.jpeg"
-          class="w-full h-full object-cover opacity-60 group-hover:opacity-100
-                 transition-opacity duration-700"
-          alt="Onboarding y upsells"
-        >
-        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent"></div>
-
-        <div class="absolute top-4 left-4 text-[11px] uppercase tracking-[0.24em] text-white/60">
-          03 · Onboarding & upsells
-        </div>
-
-        <div class="absolute bottom-4 left-4 right-4">
-          <p class="text-xs uppercase tracking-[0.2em] text-white/70 mb-2">
-            Primera impresión después del pago
-          </p>
-          <p class="text-sm text-neutral-200 max-w-lg">
-            Páginas que reducen dudas después de la compra, explican los siguientes pasos y abren
-            la puerta a nuevas ofertas sin ser agresivas.
-          </p>
-        </div>
-      </div>
-
-      <!-- CARD 04 · MEMBERSHIP / ÁREA PRIVADA -->
-      <div
-        class="reveal-item fade-scale aspect-[16/9] rounded-2xl overflow-hidden relative group
-               bg-neutral-900/80 border border-white/10 backdrop-blur-sm
-               transition-transform duration-500 ease-out
-               hover:-translate-y-3 hover:shadow-[0_24px_70px_rgba(0,0,0,0.85)]"
-      >
-        <img
-          src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=2600&auto=format&fit=crop"
-          class="w-full h-full object-cover opacity-60 group-hover:opacity-100
-                 transition-opacity duration-700"
-          alt="Membership y área privada"
-        >
-        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent"></div>
-
-        <div class="absolute top-4 left-4 text-[11px] uppercase tracking-[0.24em] text-white/60">
-          04 · Membership & área privada
-        </div>
-
-        <div class="absolute bottom-4 left-4 right-4">
-          <p class="text-xs uppercase tracking-[0.2em] text-white/70 mb-2">
-            Retención y experiencia a largo plazo
-          </p>
-          <p class="text-sm text-neutral-200 max-w-lg">
-            Espacios donde tus clientes quieren volver: navegación clara, progreso visible y accesos
-            rápidos a lo importante.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-        <!-- SECTION 4: CTA MAGNÉTICA / SISTEMA DE CTAS -->
-<section id="magnetic-section" class="py-32 bg-[#050505] flex flex-col items-center justify-center border-t border-white/5 relative overflow-hidden">
-  <div class="section-label">[ 04. SISTEMA DE CTAS ]</div>
-
-  <!-- trail para el efecto de física / cursor -->
-  <div id="trail-container" class="absolute inset-0 pointer-events-none z-0"></div>
-
- <!-- TITULAR + COPY (GLASS) -->
-<div class="relative z-10 mb-20 reveal-item fade-up flex justify-center px-6">
-
-  <div class="glass-panel max-w-2xl w-full text-center py-10 px-10">
-
-    <!-- Eyebrow -->
-    <span class="eyebrow-label mx-auto mb-5">
-      Sistema de conversión
-    </span>
-
-    <!-- Título -->
-    <h2
-      class="text-3xl md:text-4xl font-bold leading-tight mb-4
-             transition-colors duration-500 hover:text-[#A396FF]"
-    >
-      No es “un botón más”.<br class="hidden md:block">
-      Es un sistema de CTAs.
-    </h2>
-
-    <!-- Copy -->
-    <p class="text-sm md:text-base text-neutral-200 leading-relaxed max-w-xl mx-auto">
-      Diseño CTAs que guían al usuario con intención: desde un lead magnet de baja fricción hasta la acción
-      principal de compra o contacto. Todo apoyado en microinteracciones que llaman la atención sin ser agresivas.
-    </p>
-
-  </div>
-</div>
-
-
-  <!-- BLOQUES INTERACTIVOS -->
-  <div class="relative z-10 flex flex-wrap justify-center gap-12 mb-12">
-
-<!-- LEAD MAGNET -->
-<div class="flex flex-col items-center gap-4 max-w-xs text-center">
-  <div class="magnetic-wrap hoverable">
-    <div
-      class="magnetic-content w-50 h-50 md:w-56 md:h-56 rounded-full border border-white/10
-             flex items-center justify-center bg-white/5 backdrop-blur-sm group
-             hover:bg-gradient-to-r hover:from-[#5B4FD7] hover:to-[#8E8DDB]
-             hover:text-white hover:scale-110 transition-all duration-300"
-    >
-      <span class="text-xs md:text-sm font-bold tracking-[0.25em]">
-        LEAD MAGNET
-      </span>
-    </div>
-  </div>
-
-  <!-- Card glass de texto -->
-  <div class="glass-subcard w-full text-left space-y-2">
-    <h3 class="text-xs md:text-sm font-semibold tracking-[0.18em] text-neutral-200 uppercase">
-      Capturar tráfico frío
-    </h3>
-    <p class="text-xs text-neutral-300 leading-relaxed">
-      Una oferta de alto valor y baja fricción (guía, checklist, mini-audit…) para convertir visitas anónimas
-      en leads que puedes seguir trabajando.
-    </p>
-    <p class="text-[11px] text-neutral-500">
-      · Ideal para captar y analizar tráfico de campañas y contenido orgánico.
-    </p>
-  </div>
-</div>
-
-<!-- CTA PRINCIPAL -->
-<div class="flex flex-col items-center gap-4 max-w-xs text-center">
-  <div class="magnetic-wrap hoverable">
-    <div
-      class="magnetic-content w-50 h-50 md:w-56 md:h-56 rounded-full border border-white/10
-             flex items-center justify-center bg-white/5 backdrop-blur-sm group
-             hover:bg-gradient-to-r hover:from-[#8E8DDB] hover:to-[#5B4FD7]
-             hover:text-white hover:scale-110 transition-all duration-300"
-    >
-      <span class="text-xs md:text-sm font-bold tracking-[0.25em]">
-        CTA PRINCIPAL
-      </span>
-    </div>
-  </div>
-
-  <!-- Card glass de texto -->
-  <div class="glass-subcard w-full text-left space-y-2">
-    <h3 class="text-xs md:text-sm font-semibold tracking-[0.18em] text-neutral-200 uppercase">
-      Cerrar la venta
-    </h3>
-    <p class="text-xs text-neutral-300 leading-relaxed">
-      El botón que importa de verdad: pensado para el momento exacto, el mensaje correcto y el diseño que
-      hace que el clic sea la decisión obvia.
-    </p>
-    <p class="text-[11px] text-neutral-500">
-      · Optimizado para usuarios calientes y secciones clave de la landing.
-    </p>
-  </div>
-</div>
-  </div>
-
-  <!-- MICROCOPY + CTA FINAL -->
-  <div class="relative z-10 text-center space-y-4 reveal-item fade-up">
-    <p class="text-xs md:text-sm text-neutral-500 max-w-xl mx-auto">
-      En cada proyecto defino qué CTAs aparecen, dónde, con qué texto y qué feedback visual dan. Así evitamos
-      páginas llenas de botones y enfocamos la atención justo donde tiene que ir.
-    </p>
-    <a
-  href="#contact"
-  class="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-white/10 bg-white/5
-         hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 text-sm font-medium tracking-wide"
->
-  Quiero CTAs que conviertan mejor
-  <span class="text-lg">↗</span>
-</a>
-
-  </div>
-</section>
-
-
-        <!-- SECTION 5: VIDEO EXPAND -->
-        <section class="py-20 bg-[#050505] overflow-hidden relative">
-            <div class="section-label">[ 05. DEMO EN MOVIMIENTO ]</div>
-            <h2 class="sr-only">Demo visual de una landing interactiva</h2>
-            <div id="video-expand" class="video-expand-wrapper group hoverable">
-                <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-transparent transition-colors duration-500"></div>
-                <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-                    <div class="w-20 h-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-150 group-hover:opacity-0 transition-all duration-500">
-                      <i data-lucide="play" class="fill-white text-white"></i>
-                    </div>
-                </div>
-                <img src="https://images.unsplash.com/photo-1496564203457-11bb12075d90?q=80&amp;w=2500&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover" alt="Demo Landing Tubepilotpro">
-            </div>
-        </section>
-
-        <!-- SECTION 6: STATS -->
-        <section class="py-32 px-6 bg-[#050505] border-t border-white/5 relative overflow-hidden">
-            <div class="section-label">[ 06. MÉTRICAS CLAVE ]</div>
-            <h2 class="sr-only">Métricas clave de rendimiento</h2>
-          <!-- Fondo animado igual que sección 10 -->
-  <canvas id="stats-canvas" class="absolute inset-0 w-full h-full"></canvas>
-  <!-- Overlay para oscurecer y mejorar legibilidad -->
-  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40"></div>
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center mb-32">
-                <div class="reveal-item fade-up">
-                  <div class="text-xs text-neutral-500 uppercase tracking-widest mb-4">
-                    Landings lanzadas
-                  </div>
-                  <div class="text-7xl font-display font-bold counter text-transparent bg-clip-text bg-gradient-to-br from-[#5B4FD7] to-[#8E8DDB]" data-target="142">0</div>
-                </div>
-                <div class="reveal-item fade-up" style="transition-delay: 0.2s;">
-                  <div class="text-xs text-neutral-500 uppercase tracking-widest mb-4">
-                    Tiempo de carga
-                  </div>
-                  <div class="text-7xl font-display font-bold">
-                    <span class="counter text-transparent bg-clip-text bg-gradient-to-br from-[#5B4FD7] to-[#8E8DDB]" data-target="2">0</span>s
-                  </div>
-                </div>
-                <div class="reveal-item fade-up" style="transition-delay: 0.4s;">
-                  <div class="text-xs text-neutral-500 uppercase tracking-widest mb-4">
-                    Tasa media de mejora
-                  </div>
-                  <div class="text-7xl font-display font-bold counter text-transparent bg-clip-text bg-gradient-to-br from-[#5B4FD7] to-[#8E8DDB]" data-target="28">0</div>
-                </div>
-            </div>
-            <div class="text-center max-w-4xl mx-auto">
-              <div class="glass-card-premium p-6 md:p-8 mb-8 transition-all duration-500 hover:-translate-y-1">
-  <p
-    class="group text-2xl md:text-5xl font-light leading-relaxed text-neutral-300 reveal-paragraph
-           transition-colors duration-500 hover:text-[#A396FF]"
+  <h2
+    class="group text-3xl md:text-4xl font-display font-bold text-white mb-4
+           transition-colors duration-300 hover:text-[#A396FF]"
   >
-    Diseñamos landings para TubePilotPro que cargan rápido, se ven increíbles y, sobre todo, convierten.
+    Diseñamos webs para atraer, convencer y hacer que el usuario actúe.
+  </h2>
+
+  <p class="text-sm md:text-base text-neutral-400 max-w-3xl mx-auto">
+    Desde landing pages y webs corporativas hasta portfolios profesionales y mantenimiento web,
+    cada servicio está pensado para ayudarte a presentar mejor tu proyecto y generar resultados reales.
   </p>
 </div>
 
-
-            </div>
-        </section>
-
-<section
-  id="work"
-  class="py-20 bg-[#050505] border-t border-white/5 border-b relative"
->
-  <div class="section-label">[ 07. SERVICIOS CLAVE ]</div>
-
-  <div class="glass-card-premium max-w-5xl mx-auto px-6 md:px-10 mb-10 text-center p-8 md:p-12
-              transition-all duration-500 hover:-translate-y-1">
-
-    <p class="text-[11px] tracking-[0.24em] uppercase text-neutral-400 mb-3">
-      En qué tipo de páginas tengo más experiencia
-    </p>
-
-    <h2
-      class="group text-3xl md:text-4xl font-display font-bold text-white mb-4
-             transition-colors duration-300 hover:text-[#A396FF]"
-    >
-      Páginas Web diseñadas para vender, no solo para “estar presentes”.
-    </h2>
-
-    <p class="text-sm md:text-base text-neutral-400 max-w-3xl mx-auto">
-      Me especializo en landings y funnels muy concretos: pensados para campañas, lanzamientos y tráfico
-      que ya te cuesta dinero o tiempo. Cada servicio está optimizado para convertir mejor, no para
-      acumular secciones sin sentido.
-    </p>
-  </div>
-
 <!-- Sticky Cards with parallax imgs (SERVICIOS) -->
-<div class="relative isolate mt-20 md:mt-28 lg:mt-32 pb-20 md:pb-28 lg:pb-32" style="height:850vh;">
+<div class="relative isolate mt-20 md:mt-28 lg:mt-32 pb-20 md:pb-28 lg:pb-32" style="height:420vh;">
 
 
   <!-- Card 1 -->
-  <div class="sticky top-24 z-10 mx-auto max-w-6xl px-4">
-    <article class="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-2xl transition">
-      <div class="overflow-hidden">
-        <img data-parallax-img data-speed="1.0"
-          src="https://i.imgur.com/kufIRu0.png"
-          alt="Diseño web enfocado a conversión"
-          class="w-full h-[450px] lg:h-[560px] object-cover opacity-95 transition duration-700 group-hover:scale-105" />
+<div class="sticky top-24 z-10 mx-auto max-w-6xl px-4">
+  <article class="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-2xl transition">
+    <div class="overflow-hidden">
+      <img data-parallax-img data-speed="1.0"
+        src="/img/landing2.png"
+        alt="Landing page de conversión diseñada para captar contactos y clientes"
+        class="w-full h-[450px] lg:h-[560px] object-cover opacity-95 transition duration-700 group-hover:scale-105" />
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
+
+    <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
+      <div class="mb-6">
+        <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <rect width="18" height="7" x="3" y="3" rx="1" />
+           <rect width="9" height="7" x="3" y="14" rx="1" />
+           <rect width="5" height="7" x="16" y="14" rx="1" />
+          </svg>
+         Landing Pages
+        </span>
       </div>
-
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
-
-      <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
-        <div class="mb-6">
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
-            <i data-lucide="layout-template" class="w-4 h-4"></i> Diseño & UX
-          </span>
-        </div>
-        <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Web Design</h3>
-        <p class="text-lg text-white/90 mb-6 max-w-2xl">
-          Diseños limpios y con intención: jerarquía, ritmo visual y CTAs que guían a la acción.
-        </p>
-        <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
-          <span class="inline-flex items-center gap-2"><i data-lucide="target" class="w-4 h-4"></i> Claridad + conversión</span>
-          <span class="inline-flex items-center gap-2"><i data-lucide="sparkles" class="w-4 h-4"></i> Look premium</span>
-        </div>
-        <div class="mt-6">
-          <button class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
-            Ver ejemplos <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
+      <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Landing pages de conversión</h3>
+      <p class="text-lg text-white/90 mb-6 max-w-2xl">
+        Páginas diseñadas para campañas, servicios y ofertas concretas, con una estructura clara y enfocadas en convertir visitas en contactos o clientes.
+      </p>
+      <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <circle cx="12" cy="12" r="10" />
+           <circle cx="12" cy="12" r="6" />
+           <circle cx="12" cy="12" r="2" />
+          </svg>
+          Claridad + conversión
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M14 4.1 12 6" />
+           <path d="m5.1 8-2.9-.8" />
+           <path d="m6 12-1.9 2" />
+           <path d="M7.2 2.2 8 5.1" />
+           <path d="M9.037 9.69a.498.498 0 0 1 .653-.653l9.737 3.974a.5.5 0 0 1-.024.93l-3.419 1.33a1 1 0 0 0-.613.613l-1.33 3.419a.5.5 0 0 1-.93.024z" />
+         </svg>
+         CTA bien planteados
+       </span>
       </div>
-    </article>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="sticky top-24 mt-24 z-20 mx-auto max-w-6xl px-4">
-    <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
-      <div class="overflow-hidden">
-        <img data-parallax-img data-speed="0.9"
-          src="https://i.imgur.com/3tP0OMa.png"
-          alt="Desarrollo Webflow profesional"
-          class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
+      <div class="mt-6">
+        <a
+          href="#portfolio"
+          class="inline-flex items-center gap-2
+                 bg-white text-black
+                 px-6 py-3 rounded-full
+                 font-medium
+                 hover:bg-gray-100
+                 transition">
+          Ver ejemplos reales
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M5 12h14" />
+           <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
       </div>
-
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
-
-      <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
-        <div class="mb-6">
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
-            <i data-lucide="code-2" class="w-4 h-4"></i> Desarrollo
-          </span>
-        </div>
-        <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Webflow Development</h3>
-        <p class="text-lg text-white/90 mb-6 max-w-2xl">
-          Implementación pixel-perfect con estructura escalable, animaciones sutiles y performance cuidada.
-        </p>
-        <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
-          <span class="inline-flex items-center gap-2"><i data-lucide="layers" class="w-4 h-4"></i> Componentes reutilizables</span>
-          <span class="inline-flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4"></i> Carga rápida</span>
-        </div>
-        <div class="mt-6">
-          <button class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
-            Cómo trabajo <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="sticky top-24 mt-48 z-30 mx-auto max-w-6xl px-4">
-    <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
-      <div class="overflow-hidden">
-        <img data-parallax-img data-speed="0.8"
-          src="https://i.imgur.com/g2LUfQU.png"
-          alt="Estrategia de funnel y estructura"
-          class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
-      </div>
-
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
-
-      <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
-        <div class="mb-6">
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
-            <i data-lucide="route" class="w-4 h-4"></i> Estrategia
-          </span>
-        </div>
-        <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Funnel Strategy</h3>
-        <p class="text-lg text-white/90 mb-6 max-w-2xl">
-          Diseñamos el recorrido: tráfico → lead → oferta. Mensaje, pasos y CTAs alineados para vender.
-        </p>
-        <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
-          <span class="inline-flex items-center gap-2"><i data-lucide="git-branch" class="w-4 h-4"></i> Flujo claro</span>
-          <span class="inline-flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Sin fricción</span>
-        </div>
-        <div class="mt-6">
-          <button class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
-            Ver estructura <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="sticky top-24 mt-72 z-40 mx-auto max-w-6xl px-4">
-    <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
-      <div class="overflow-hidden">
-        <img data-parallax-img data-speed="0.7"
-          src="https://i.imgur.com/RXgkPZ1.png"
-          alt="Landing pages para campañas y lanzamientos"
-          class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
-      </div>
-
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
-
-      <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
-        <div class="mb-6">
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
-            <i data-lucide="rocket" class="w-4 h-4"></i> Campañas
-          </span>
-        </div>
-        <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Landing Pages</h3>
-        <p class="text-lg text-white/90 mb-6 max-w-2xl">
-          Páginas de venta enfocadas a una sola acción: mensajes claros, prueba y CTA sin distracciones.
-        </p>
-        <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
-          <span class="inline-flex items-center gap-2"><i data-lucide="mouse-pointer-click" class="w-4 h-4"></i> CTA fuerte</span>
-          <span class="inline-flex items-center gap-2"><i data-lucide="timer" class="w-4 h-4"></i> Tiempo de carga</span>
-        </div>
-        <div class="mt-6">
-          <button class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
-            Ver ejemplos <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <!-- Card 5 -->
- <div class="sticky top-24 mt-96 z-50 mx-auto max-w-6xl px-4">
-    <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
-      <div class="overflow-hidden">
-        <img data-parallax-img data-speed="0.6"
-          src="https://i.imgur.com/L4kRCIq.png"
-          alt="Estructura de copy y narrativa"
-          class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
-      </div>
-
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
-
-      <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
-        <div class="mb-6">
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
-            <i data-lucide="type" class="w-4 h-4"></i> Mensaje
-          </span>
-        </div>
-        <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Copy Structure</h3>
-        <p class="text-lg text-white/90 mb-6 max-w-2xl">
-          Jerarquía de mensaje: headline, oferta, objeciones y prueba. Copy que empuja a decidir.
-        </p>
-        <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
-          <span class="inline-flex items-center gap-2"><i data-lucide="badge-check" class="w-4 h-4"></i> Claridad</span>
-          <span class="inline-flex items-center gap-2"><i data-lucide="message-square" class="w-4 h-4"></i> Persuasión</span>
-        </div>
-        <div class="mt-6">
-          <button class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
-            Ver enfoque <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <!-- Card 6 -->
-<div class="sticky top-24 mt-[30rem] mx-auto max-w-6xl px-4" style="z-index:60">
-    <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
-      <div class="overflow-hidden">
-        <img data-parallax-img data-speed="0.5"
-          src="https://i.imgur.com/RXgkPZ1.png"
-          alt="Optimización de conversión"
-          class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
-      </div>
-
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
-
-      <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
-        <div class="mb-6">
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
-            <i data-lucide="line-chart" class="w-4 h-4"></i> Optimización
-          </span>
-        </div>
-        <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Conversion Optimization</h3>
-        <p class="text-lg text-white/90 mb-6 max-w-2xl">
-          Mejoras por iteración: fricción, claridad, secciones clave y pruebas. Más conversión con lo que ya tienes.
-        </p>
-        <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
-          <span class="inline-flex items-center gap-2"><i data-lucide="activity" class="w-4 h-4"></i> Auditoría</span>
-          <span class="inline-flex items-center gap-2"><i data-lucide="beaker" class="w-4 h-4"></i> Test</span>
-        </div>
-        <div class="mt-6">
-          <button class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
-            Ver mejoras <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-    </article>
-  </div>
-
- <!-- Card 7 -->
-<div class="sticky top-24 mt-[36rem] mx-auto max-w-6xl px-4" style="z-index:70">
-    <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
-      <div class="overflow-hidden">
-        <img data-parallax-img data-speed="0.4"
-          src="https://i.imgur.com/YFtajuR.png"
-          alt="Sistema de UI consistente"
-          class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
-      </div>
-
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
-
-      <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
-        <div class="mb-6">
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
-            <i data-lucide="shapes" class="w-4 h-4"></i> Sistema
-          </span>
-        </div>
-        <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">UI Systems</h3>
-        <p class="text-lg text-white/90 mb-6 max-w-2xl">
-          Componentes coherentes y escalables para mantener consistencia y velocidad al crear nuevas páginas.
-        </p>
-        <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
-          <span class="inline-flex items-center gap-2"><i data-lucide="grid-2x2" class="w-4 h-4"></i> Consistencia</span>
-          <span class="inline-flex items-center gap-2"><i data-lucide="repeat" class="w-4 h-4"></i> Escalable</span>
-        </div>
-        <div class="mt-6">
-          <button class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
-            Ver sistema <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-    </article>
-  </div>
+    </div>
+  </article>
 </div>
 
+<!-- Card 2 -->
+<div class="sticky top-24 mt-24 z-20 mx-auto max-w-6xl px-4">
+  <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
+    <div class="overflow-hidden">
+      <img data-parallax-img data-speed="0.9"
+        src="/img/webc2.png"
+        alt="Web corporativa orientada a negocio para generar confianza y contactos"
+        class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
+    </div>
 
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
+
+    <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
+      <div class="mb-6">
+        <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M10 6V5a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1" />
+           <rect width="20" height="14" x="2" y="6" rx="2" />
+           <path d="M2 12h20" />
+          </svg>
+          Web Corporativa
+        </span>
+      </div>
+      <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Webs corporativas orientadas a negocio</h3>
+      <p class="text-lg text-white/90 mb-6 max-w-2xl">
+        Webs para negocios, marcas y profesionales que necesitan transmitir confianza, explicar bien sus servicios y generar reservas, llamadas o contactos.
+      </p>
+      <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
+        <span class="inline-flex items-center gap-2"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.68-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z" />
+         <path d="m9 12 2 2 4-4" />
+       </svg>
+        Confianza + claridad
+        </span>
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M13 2a9 9 0 0 1 9 9" />
+           <path d="M13 6a5 5 0 0 1 5 5" />
+           <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+         </svg>
+         Contacto y reservas
+        </span>
+      </div>
+      <div class="mt-6">
+        <a
+          href="#proceso"
+          class="inline-flex items-center gap-2
+                 bg-white text-black
+                 px-6 py-3 rounded-full
+                 font-medium
+                 hover:bg-gray-100
+                 transition">
+          Ver cómo trabajo
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <circle cx="12" cy="12" r="10" />
+           <circle cx="12" cy="12" r="6" />
+           <circle cx="12" cy="12" r="2" />
+          </svg>
+          Claridad + conversión
+        </a>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!-- Card 3 -->
+<div class="sticky top-24 mt-48 z-30 mx-auto max-w-6xl px-4">
+  <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
+    <div class="overflow-hidden">
+      <img data-parallax-img data-speed="0.8"
+        src="/img/portfolio2.png"
+        alt="Portfolio profesional con diseño premium para mostrar trabajo y proyectos"
+        class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
+
+    <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
+      <div class="mb-6">
+        <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+           <circle cx="8.5" cy="10" r="1.5"></circle>
+           <path d="M21 15l-5-5L5 21"></path>
+         </svg>
+         Portfolio
+        </span>
+      </div>
+      <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Portfolios profesionales con presencia premium</h3>
+      <p class="text-lg text-white/90 mb-6 max-w-2xl">
+        Webs pensadas para mostrar trabajo con claridad, personalidad y una presentación mucho más sólida que depender solo de redes sociales.
+      </p>
+      <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+           <circle cx="8.5" cy="10" r="1.5"></circle>
+           <path d="M21 15l-5-5L5 21"></path>
+         </svg>
+         Trabajo bien presentado
+        </span>
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8L12 3z"></path>
+            <path d="M19 14l.9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9L19 14z"></path>
+            <path d="M5 14l1.2 2.8L9 18l-2.8 1.2L5 22l-1.2-2.8L1 18l2.8-1.2L5 14z"></path>
+           </svg>
+           Imagen más profesional
+          </span>
+      </div>
+      <div class="mt-6">
+        <a
+          href="#portfolio"
+          class="inline-flex items-center gap-2
+                 bg-white text-black
+                 px-6 py-3 rounded-full
+                 font-medium
+                 hover:bg-gray-100
+                 transition">
+          Ver enfoque completo
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M5 12h14"></path>
+           <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!-- Card 4 -->
+<div class="sticky top-24 mt-[36rem] mx-auto max-w-6xl px-4" style="z-index:70">
+  <article class="relative group overflow-hidden rounded-3xl bg-white shadow-2xl transition">
+    <div class="overflow-hidden">
+      <img data-parallax-img data-speed="0.4"
+        src="/img/portfolio4.avif"
+        alt="Servicio de mantenimiento y optimización web para mejorar rendimiento y actualizar contenidos"
+        class="w-full h-[450px] lg:h-[560px] object-cover transition duration-700 group-hover:scale-105" />
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-100"></div>
+
+    <div class="absolute inset-0 p-8 lg:p-14 flex flex-col justify-end">
+      <div class="mb-6">
+        <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm font-medium">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M14.7 6.3a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0-.24 1.02l-1.1 3.3a1 1 0 0 0 1.26 1.26l3.3-1.1a1 1 0 0 0 1.02-.24l7-7a1 1 0 0 0 0-1.4z"></path>
+           <path d="M16 4l4 4"></path>
+          </svg>
+          Mantenimiento
+        </span>
+      </div>
+      <h3 class="text-3xl lg:text-5xl font-semibold text-white mb-4">Mantenimiento y optimización web</h3>
+      <p class="text-lg text-white/90 mb-6 max-w-2xl">
+        Soporte, ajustes, mejoras y mantenimiento continuo para que la web siga funcionando bien, se mantenga actualizada y evolucione con el negocio.
+      </p>
+      <div class="flex flex-wrap items-center gap-6 text-sm text-white/80">
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+            <path d="M3 21v-5h5"></path>
+            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+            <path d="M16 8h5V3"></path>
+          </svg>
+          Mejoras continuas
+          </span>
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"></path>
+         </svg>
+         Rendimiento y soporte
+      </div>
+      <div class="mt-6">
+        <a
+          href="#contacto"
+          class="inline-flex items-center gap-2
+                 bg-white text-black
+                 px-6 py-3 rounded-full
+                 font-medium
+                 hover:bg-gray-100
+                 transition">
+          Ver como lo optimizo
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+           <path d="M5 12h14"></path>
+           <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+</div>
+</div>
+<div class="mt-10 md:mt-14 flex flex-col items-center text-center gap-6">
+
+  <!-- micro copy -->
+  <p class="text-sm md:text-base text-neutral-300 max-w-md">
+    Si encaja con lo que buscas, podemos ver tu caso y plantear la mejor solución.
+  </p>
+
+  <!-- botón -->
+  <a
+    href="#contacto"
+    class="inline-flex items-center gap-3
+           px-8 py-3 rounded-full
+           bg-gradient-to-r from-[#5B4FD7] to-[#8E8DDB]
+           text-white font-medium
+           shadow-[0_10px_40px_rgba(91,79,215,0.4)]
+           transition-all duration-300
+           hover:scale-105 hover:shadow-[0_20px_60px_rgba(91,79,215,0.6)]"
+  >
+    Ver proyectos reales
+    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+     <path d="M5 12h14"></path>
+     <path d="m12 5 7 7-7 7"></path>
+    </svg>
+  </a>
+
+  <!-- refuerzo -->
+  <span class="text-xs text-neutral-500">
+    Respuesta en 24–48h · Sin compromiso
+  </span>
+
+</div>
 <!-- DETALLE DE SERVICIOS -->
 <div class="max-w-5xl mx-auto px-6 md:px-10 mt-20 md:mt-28 lg:mt-32 pb-10 md:pb-16 grid gap-6 md:grid-cols-3 text-sm">
-
-
 
   <!-- CARD -->
   <div
@@ -1169,22 +863,22 @@
     </div>
 
     <p class="relative z-10 text-[11px] tracking-[0.2em] uppercase text-neutral-400">
-      Lanzamientos & campañas
+      Captación & conversión
     </p>
 
     <h3
       class="relative z-10 text-base font-semibold text-white
              transition-colors duration-300
              group-hover:text-[#A396FF]">
-      Landing pages y páginas de venta
+      Páginas pensadas para mover al usuario a la acción
     </h3>
 
     <p
       class="relative z-10 text-xs text-neutral-400
              transition-colors duration-300
              group-hover:text-neutral-300">
-      Páginas ultra enfocadas en una sola oferta: estructura pensada para tráfico frío y templado,
-      mensajes claros y CTAs bien colocados.
+      Landings y páginas estratégicas con estructura clara, mensajes bien planteados y llamadas a la acción
+      pensadas para generar contactos, reservas o ventas.
     </p>
   </div>
 
@@ -1205,22 +899,22 @@
     </div>
 
     <p class="relative z-10 text-[11px] tracking-[0.2em] uppercase text-neutral-400">
-      Contenido que trabaja 24/7
+      Presencia profesional
     </p>
 
     <h3
       class="relative z-10 text-base font-semibold text-white
              transition-colors duration-300
              group-hover:text-[#A396FF]">
-      Funnels para YouTube & tráfico orgánico
+      Webs que transmiten confianza y elevan la marca
     </h3>
 
     <p
       class="relative z-10 text-xs text-neutral-400
              transition-colors duration-300
              group-hover:text-neutral-300">
-      De un vídeo o pieza de contenido a un funnel claro: landings para captar leads, tripwires y
-      ofertas principales bien enganchadas al contenido.
+      Desde webs corporativas hasta portfolios visuales, diseñamos proyectos que presentan mejor tu trabajo,
+      explican bien tus servicios y refuerzan tu imagen profesional.
     </p>
   </div>
 
@@ -1241,40 +935,425 @@
     </div>
 
     <p class="relative z-10 text-[11px] tracking-[0.2em] uppercase text-neutral-400">
-      Relación a largo plazo
+      Mejora continua
     </p>
 
     <h3
       class="relative z-10 text-base font-semibold text-white
              transition-colors duration-300
              group-hover:text-[#A396FF]">
-      Onboarding, membership & rediseños
+      Mantenimiento, soporte y optimización a largo plazo
     </h3>
 
     <p
       class="relative z-10 text-xs text-neutral-400
              transition-colors duration-300
              group-hover:text-neutral-300">
-      Experiencias pensadas para lo que pasa después del pago: onboarding claro, áreas de cliente
-      sin fricción y rediseños de páginas que ya generan ingresos.
+      La web no termina al publicarse. También puedes contar con mantenimiento, ajustes, mejoras visuales
+      y optimización continua para que el proyecto siga funcionando bien con el tiempo.
     </p>
   </div>
 </div>
 </section>
 
+<!-- SECTION 4: ACCORDION -->
+<section id="portfolio" class="py-24 md:py-28 px-6 md:px-12 bg-[#050505] border-t border-white/5 relative">
+  <div class="section-label">[ 04. PORTFOLIO ]</div>
+
+  <div class="mb-6 flex justify-between items-end">
+    <h2 class="text-4xl font-display font-bold">Proyectos y enfoques reales</h2>
+    <p class="text-neutral-500 text-sm">Hover para ver el foco</p>
+  </div>
+
+  <p class="text-sm text-neutral-400 max-w-3xl mb-12">
+  Una muestra del tipo de proyectos que diseñamos: páginas enfocadas a conversión, webs para negocio, portfolios profesionales y mejoras sobre webs ya existentes.
+  </p>
+
+  <div class="accordion-container flex-col md:flex-row">
+    <div class="accordion-item group cursor-none hoverable">
+      <img
+        src="/img/landing.png"
+        class="accordion-img accordion-img--portfolio"
+        alt="Landing page de conversión diseñada para captar contactos o ventas"
+      >
+      <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors" aria-hidden="true"></div>
+      <div class="accordion-text">
+        <h4 class="text-2xl font-bold">Landing page de conversión</h4>
+      </div>
+    </div>
+
+    <div class="accordion-item group cursor-none hoverable">
+      <img
+        src="/img/optica2.png"
+        class="accordion-img"
+        alt="Web corporativa orientada a negocio para explicar servicios y generar reservas o contactos"
+      >
+      <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
+      <div class="accordion-text">
+        <h4 class="text-2xl font-bold">Web corporativa orientada a negocio</h4>
+      </div>
+    </div>
+
+    <div class="accordion-item group cursor-none hoverable">
+      <img
+        src="/img/portfolioo.jpg"
+        class="accordion-img"
+        alt="Portfolio profesional con diseño premium para mostrar proyectos y trabajo creativo"
+      >
+      <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
+      <div class="accordion-text">
+        <h4 class="text-2xl font-bold">Portfolio profesional</h4>
+      </div>
+    </div>
+
+    <div class="accordion-item group cursor-none hoverable">
+      <img
+        src="/img/servicio4.avif"
+        class="accordion-img"
+        alt="Rediseño, mantenimiento y optimización web para mejorar rendimiento y claridad"
+      >
+      <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
+      <div class="accordion-text">
+        <h4 class="text-2xl font-bold">Optimización y mejora continua</h4>
+      </div>
+    </div>
+  </div>
+  <!-- CTA PORTFOLIO -->
+<div class="mt-16 md:mt-20 text-center flex flex-col items-center gap-6">
+
+  <!-- TEXTO -->
+  <p class="text-base md:text-lg text-neutral-200 max-w-xl">
+    Si buscas una web con este nivel de cuidado, estructura y presencia,
+    podemos plantear una solución adaptada a tu proyecto.
+  </p>
+
+  <!-- BOTÓN CTA -->
+  <a
+  href="#contacto"
+  aria-label="Solicitar una web con diseño profesional similar a los proyectos mostrados"
+  class="inline-flex items-center gap-3
+         px-8 py-3 rounded-full
+         bg-gradient-to-r from-[#5B4FD7] to-[#8E8DDB]
+         text-white font-medium
+         shadow-[0_20px_60px_rgba(91,79,215,0.5)]
+         transition-all duration-300
+         hover:scale-105 hover:shadow-[0_30px_80px_rgba(91,79,215,0.7)]"
+>
+  Quiero una web así
+  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M5 12h14"></path>
+    <path d="m12 5 7 7-7 7"></path>
+  </svg>
+</a>
+
+  <!-- MICROCOPY -->
+  <span class="text-xs text-neutral-500">
+    Te digo rápido si encaja y qué enfoque tendría tu web
+  </span>
+</div>
+</section>
+
+<!-- SECTION 5: HORIZONTAL --> 
+<section id="proceso" class="horizontal-section bg-[#050505]">
+  <div class="section-label">[ 05. PROCESO DE DISEÑO ]</div>
+
+  <div class="sticky top-0 h-screen overflow-hidden flex items-center">
+    <div id="horizontal-track" class="flex flex-nowrap gap-24 px-12 md:px-32 will-change-transform items-center">
+
+      <!-- BLOQUE TITULAR + COPY + CTA -->
+      <div class="w-[90vw] md:w-[720px] flex-shrink-0 space-y-8">
+        <h2 class="text-6xl md:text-8xl font-display font-bold leading-none text-transparent bg-clip-text bg-gradient-to-br from-[#5B4FD7] to-[#8E8DDB]">
+          Estrategia y diseño<br>para tu web
+        </h2>
+
+        <p class="text-sm md:text-base text-neutral-200 leading-relaxed glass-panel max-w-xl">
+          Alineo el diseño web con los objetivos del proyecto: ordeno el mensaje, reduzco la fricción
+          y planteo una experiencia pensada para que el usuario entienda, confíe y actúe.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4">
+          <a
+            href="#contacto"
+            aria-label="Solicitar información sobre el proceso de diseño web"
+            class="inline-flex items-center justify-center
+            px-6 py-3 rounded-full border border-white/10
+            text-sm font-medium tracking-wide
+           bg-white/5 hover:bg-white/10 hover:-translate-y-0.5
+           transition-all duration-300">
+           Empezar mi proyecto
+         </a>
+
+          <a
+           href="https://calendar.app.google/BLbyJpjmMpm3bWhw9"
+           aria-label="Agendar una llamada en Google Calendar"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cta="schedule-call"
+            class="px-6 py-3 rounded-full text-sm font-medium tracking-wide text-neutral-300
+                   border border-transparent hover:border-white/10 hover:bg-white/5
+                   transition-all duration-300"
+          >
+            Agendar una llamada <span aria-hidden="true">→</span>
+          </a>
+
+          <span
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[11px] uppercase tracking-[0.18em]
+                   border border-white/10 text-neutral-400 bg-white/5/10">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
+            Tiempo medio: 3–5 semanas
+          </span>
+        </div>
+      </div>
+
+      <!-- PASO 01: INVESTIGACIÓN & ESTRATEGIA -->
+<div
+  class="w-[70vw] md:w-[60vw] aspect-video flex-shrink-0 relative rounded-xl overflow-hidden border border-white/10 group hoverable">
+  <img
+    src="/img/process1.png"
+    class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+    alt="Investigación y estrategia para diseño de páginas web orientadas a conversión">
+
+  <!-- Overlay -->
+  <div
+   class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent
+         opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+   aria-hidden="true">
+ </div>
+
+  <div class="absolute bottom-5 left-5 right-5 space-y-2">
+    <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
+                 bg-white/10 text-white/80 border border-white/20">
+      Paso 01 · Contexto & estrategia
+    </span>
+
+    <p class="text-sm text-neutral-200 max-w-lg">
+      Analizo tu proyecto, oferta y usuario para definir qué debe comunicar la web, cómo estructurarlo
+      y qué recorrido tiene que seguir el usuario para convertir.
+    </p>
+  </div>
+</div>
+
+<!-- BLOQUE TEXTO: ESTRUCTURA CLARA -->
+<div class="w-[60vw] md:w-[420px] flex-shrink-0 px-4 md:px-0">
+  <div class="glass-panel h-full flex flex-col justify-between">
+
+    <!-- Parte superior -->
+    <div class="space-y-4">
+      <p class="text-[11px] tracking-[0.2em] uppercase text-neutral-500">
+        Capa 1 · Estructura
+      </p>
+
+      <h3
+        class="text-3xl md:text-4xl font-bold leading-tight
+               transition-colors duration-500 hover:text-[#A396FF]"
+      >
+        Estructura clara para la web
+      </h3>
+
+      <p class="text-sm md:text-base text-neutral-200 leading-relaxed">
+        Organizo el contenido para que el usuario entienda rápido qué haces, qué ofreces y cuál es el siguiente paso.
+        Cada sección tiene una función dentro del recorrido.
+      </p>
+    </div>
+
+    <!-- Parte inferior -->
+    <div class="mt-6 pt-4 border-t border-white/5">
+      <ul class="text-xs md:text-sm text-neutral-400 space-y-1.5">
+        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+          · Jerarquía clara de contenido
+        </li>
+        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+          · Mensajes directos y sin ruido
+        </li>
+        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+          · Recorrido pensado para guiar al usuario
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
 
 
-<!-- SECTION 8: VISUAL IMPACT -->
-<section class="relative h-[80vh] w-full overflow-hidden bg-black border-t border-white/5">
-  <div class="section-label">[ 08. IMPACTO VISUAL ]</div>
+      <!-- PASO 02: ARQUITECTURA & FLOWS -->
+<div
+  class="w-[70vw] md:w-[60vw] aspect-video flex-shrink-0 relative rounded-xl overflow-hidden border border-white/10 group hoverable">
+  <img
+    src="/img/process2.png"
+    class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+    alt="Arquitectura y recorrido del usuario en páginas web orientadas a conversión">
+
+  <div
+    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent
+           opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+  </div>
+
+  <div class="absolute bottom-5 left-5 right-5 space-y-2">
+    <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
+                 bg-white/10 text-white/80 border border-white/20">
+      Paso 02 · Arquitectura & recorrido
+    </span>
+
+    <p class="text-sm text-neutral-200 max-w-lg">
+      Defino el recorrido del usuario dentro de la web: qué ve primero, cómo avanza y qué le lleva a tomar una decisión.
+    </p>
+  </div>
+</div>
+
+     <!-- BLOQUE TEXTO: CONVERSIÓN -->
+<div class="w-[60vw] md:w-[420px] flex-shrink-0 px-4 md:px-0">
+  <div class="glass-panel h-full flex flex-col justify-between">
+
+    <!-- Parte superior -->
+    <div class="space-y-4">
+      <p class="text-[11px] tracking-[0.2em] uppercase text-neutral-500">
+        Capa 2 · Conversión
+      </p>
+
+      <h3
+        class="text-3xl md:text-4xl font-bold leading-tight
+               transition-colors duration-500 hover:text-[#A396FF]"
+      >
+        Diseño enfocado a generar acción
+      </h3>
+
+      <p class="text-sm md:text-base text-neutral-200 leading-relaxed">
+        Ajusto el contenido, los puntos de atención y los CTAs para que el usuario avance de forma natural
+        hacia una acción concreta sin fricción.
+      </p>
+    </div>
+
+    <!-- Parte inferior -->
+    <div class="mt-6 pt-4 border-t border-white/5">
+      <ul class="text-xs md:text-sm text-neutral-400 space-y-1.5">
+        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+          · CTAs colocados con intención
+        </li>
+        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+          · Ritmo visual que guía la atención
+        </li>
+        <li class="transition-all duration-300 hover:translate-x-1 hover:text-neutral-200">
+          · Menos fricción, más claridad
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <!-- PASO 03: VALIDACIÓN & PROTOTIPO -->
+<div
+  class="w-[70vw] md:w-[60vw] aspect-video flex-shrink-0 relative rounded-xl overflow-hidden border border-white/10 group hoverable">
+  <img
+    src="/img/process3.png"
+    class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+    alt="Prototipo y validación previa al diseño final de una página web">
+  <div
+    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent
+           opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+  </div>
+  <div class="absolute bottom-5 left-5 right-5 space-y-2">
+    <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
+                 bg-white/10 text-white/80 border border-white/20">
+      Paso 03 · Prototipo & validación
+    </span>
+    <p class="text-sm text-neutral-200 max-w-lg">
+      Antes del diseño final, validamos la base del proyecto: estructura, jerarquía visual y recorrido del usuario para asegurar que todo tenga sentido.
+    </p>
+  </div>
+</div>
+
+     <!-- PASO 04: UI & SISTEMA VISUAL -->
+<div class="w-[80vw] md:w-[560px] flex-shrink-0 relative pl-10 md:pl-20">
+
+  <!-- Línea vertical -->
+  <span class="absolute left-0 top-0 h-full w-px bg-white/10" aria-hidden="true"></span>
+
+  <!-- Glass principal -->
+  <div class="glass-panel flex flex-col gap-6 py-8">
+    <!-- Eyebrow -->
+    <p class="text-[11px] tracking-[0.2em] uppercase text-neutral-500">
+      Capa 3 · Parte visual
+    </p>
+
+    <!-- Header -->
+    <div class="space-y-3">
+      <h3
+        class="text-3xl md:text-4xl font-bold leading-tight transition-colors duration-500 hover:text-[#A396FF]"
+      >
+        Sistema visual y experiencia consistente
+      </h3>
+
+      <p class="text-sm md:text-base text-neutral-200 leading-relaxed max-w-md">
+        Desarrollo una interfaz coherente en todos los puntos de contacto: tipografía, color, ritmo visual y componentes que refuerzan la marca y mejoran la experiencia.
+      </p>
+    </div>
+
+    <!-- Sub-cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+
+      <!-- Card 01 -->
+      <div class="glass-subcard h-full flex flex-col justify-between">
+        <div class="text-[11px] uppercase tracking-[0.18em] text-neutral-500 mb-2">
+          Componentes
+        </div>
+        <p class="text-xs text-neutral-300 leading-snug">
+          Botones, bloques, formularios y elementos con una misma lógica visual para mantener consistencia en toda la web.
+        </p>
+      </div>
+
+      <!-- Card 02 -->
+      <div class="glass-subcard h-full flex flex-col justify-between">
+        <div class="text-[11px] uppercase tracking-[0.18em] text-neutral-500 mb-2">
+          Interacción
+        </div>
+        <p class="text-xs text-neutral-300 leading-snug">
+          Animaciones y microinteracciones medidas para acompañar la navegación y reforzar la percepción premium.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+      <!-- PASO 04: ENTREGA & OPTIMIZACIÓN -->
+<div
+  class="w-[70vw] md:w-[60vw] aspect-video flex-shrink-0 relative rounded-xl overflow-hidden border border-white/10 group hoverable">
+  <img
+    src="/img/process4.png"
+    class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+    alt="Entrega y optimización de una página web lista para publicarse y evolucionar">
+  <div
+    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent
+           opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+  </div>
+  <div class="absolute bottom-5 left-5 right-5 space-y-2">
+    <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.18em]
+                 bg-white/10 text-white/80 border border-white/20">
+      Paso 04 · Entrega & optimización
+    </span>
+    <p class="text-sm text-neutral-200 max-w-lg">
+      Entrego una web lista para publicarse, con una base sólida, cuidada y preparada para seguir mejorando con el tiempo si el proyecto lo necesita.
+    </p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: VISUAL IMPACT -->
+<section id="impacto" class="relative h-[80vh] w-full overflow-hidden bg-black border-t border-white/5">
+  <div class="section-label">[ 06. IMPACTO VISUAL ]</div>
 
   <!-- VIDEO BACKGROUND -->
-  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
-    <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-video-of-ink-in-water-2527-large.mp4" type="video/mp4">
-  </video>
+  <video autoplay loop muted playsinline preload="metadata" poster="./img/impacto-poster.jpg" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover">
+  <source src="./video/impacto-visual.webm" type="video/webm">
+  <source src="./video/impacto-visual.mp4" type="video/mp4">
+</video>
 
   <!-- SVG MASK -->
-  <div class="absolute inset-0 z-10 w-full h-full">
+  <div class="absolute inset-0 z-10 w-full h-full" aria-hidden="true">
     <svg class="w-full h-full" preserveAspectRatio="xMidYMid slice">
       <defs>
         <mask id="text-mask">
@@ -1288,7 +1367,7 @@
             font-weight="900"
             font-size="15vw"
             fill="black">
-            TUBE
+            PILOT
           </text>
         </mask>
       </defs>
@@ -1297,7 +1376,7 @@
   </div>
 
   <!-- OVERLAY -->
-  <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+  <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/80 via-black/40 to-black/20" aria-hidden="true"></div>
 
   <!-- CONTENIDO -->
   <div class="absolute inset-0 z-30 flex items-center">
@@ -1329,8 +1408,8 @@
         <!-- BULLETS -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-neutral-300">
           <div class="group/item flex gap-3 transition hover:translate-x-1">
-            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-[#5B4FD7] transition-transform group-hover/item:scale-150"></span>
-            <p>Uso del movimiento para guiar la mirada, no para distraer.</p>
+            <span class="mt-1 h-1.5 w-1.5 rounded-full bg-[#5B4FD7] transition-transform group-hover/item:scale-150" aria-hidden="true"></span>
+            <p>Uso del movimiento en la web para guiar la mirada, no para distraer.</p>
           </div>
           <div class="group/item flex gap-3 transition hover:translate-x-1">
             <span class="mt-1 h-1.5 w-1.5 rounded-full bg-[#8E8DDB] transition-transform group-hover/item:scale-150"></span>
@@ -1338,18 +1417,19 @@
           </div>
           <div class="group/item flex gap-3 transition hover:translate-x-1">
             <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400 transition-transform group-hover/item:scale-150"></span>
-            <p>Equilibrio entre “wow” visual y tiempos de carga reales.</p>
+            <p>Equilibrio entre impacto visual y tiempos de carga reales.</p>
           </div>
           <div class="group/item flex gap-3 transition hover:translate-x-1">
             <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400 transition-transform group-hover/item:scale-150"></span>
-            <p>Diseños “bulletproof”: se ven bien en desktop y mobile.</p>
+            <p>Diseños Responsive: se ven bien en desktop y mobile.</p>
           </div>
         </div>
 
         <!-- CTA -->
         <div class="flex flex-wrap items-center gap-4 pt-2">
-          <a
-  href="#contact"
+         <a
+  href="#contacto"
+  aria-label="Solicitar una web con alto impacto visual y diseño a medida"
   class="px-7 py-3 rounded-full border border-white/10 bg-white/5 text-sm font-medium
          transition-all duration-500
          hover:bg-white/10 hover:border-[#5B4FD7]/40 hover:-translate-y-1"
@@ -1364,127 +1444,245 @@
         </div>
       </div>
 
-      <!-- MINI CARD MÉTRICAS -->
-      <div class="reveal-item fade-up md:ml-auto">
-        <div
-          class="group relative rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md px-6 py-5
-                 transition-all duration-700 ease-out
-                 hover:-translate-y-2
-                 hover:shadow-[0_30px_80px_rgba(0,0,0,0.8)]
-                 hover:border-[#5B4FD7]/40"
-        >
-          <!-- halo -->
-          <div
-            class="pointer-events-none absolute inset-0 rounded-2xl
-                   bg-gradient-to-br from-[#5B4FD7]/15 via-transparent to-transparent
-                   opacity-0 transition-opacity duration-700
-                   group-hover:opacity-100">
-          </div>
+      <!-- MINI CARD · IMPACTO DEL DISEÑO -->
+<div class="reveal-item fade-up md:ml-auto">
+  <div
+    class="group relative rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md px-6 md:px-7 py-6 md:py-7
+           transition-all duration-700 ease-out
+           hover:-translate-y-2
+           hover:shadow-[0_30px_80px_rgba(0,0,0,0.8)]
+           hover:border-[#5B4FD7]/40 max-w-[380px]"
+  >
+    <!-- halo -->
+    <div
+       class="pointer-events-none absolute inset-0 rounded-2xl
+         bg-gradient-to-br from-[#5B4FD7]/15 via-transparent to-transparent
+         opacity-0 transition-opacity duration-700
+         group-hover:opacity-100"
+       aria-hidden="true">
+    </div>
 
-          <p class="relative z-10 text-[11px] tracking-[0.24em] uppercase text-neutral-400">
-            Datos de proyectos reales
-          </p>
+    <!-- Eyebrow -->
+    <p class="relative z-10 text-[11px] tracking-[0.24em] uppercase text-neutral-400 mb-5">
+      Impacto del diseño
+    </p>
 
-          <div class="relative z-10 space-y-4">
-            <div>
-              <div class="text-2xl font-display font-semibold text-white leading-none">
-                +32%
-              </div>
-              <div class="text-[12px] text-neutral-400">
-                más tiempo promedio en página
-              </div>
-            </div>
-            <div>
-              <div class="text-2xl font-display font-semibold text-white leading-none">
-                +18%
-              </div>
-              <div class="text-[12px] text-neutral-400">
-                clics en CTAs principales
-              </div>
-            </div>
-          </div>
-
-          <div class="relative z-10 h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent my-3"></div>
-
-          <p class="relative z-10 text-[11px] text-neutral-500 max-w-xs">
-            El impacto visual no es solo estética: es una palanca directa en métricas
-            como scroll depth, tiempo de lectura y clics importantes.
-          </p>
+    <!-- ITEMS -->
+    <div class="relative z-10 space-y-5">
+      <div class="pb-4 border-b border-white/10">
+        <div class="text-lg md:text-xl font-semibold text-white mb-1">
+          Primera impresión
         </div>
+        <p class="text-sm text-neutral-300 leading-relaxed">
+          La percepción de una web se forma en segundos.
+        </p>
       </div>
+
+      <div class="pb-4 border-b border-white/10">
+        <div class="text-lg md:text-xl font-semibold text-white mb-1">
+          Claridad
+        </div>
+        <p class="text-sm text-neutral-300 leading-relaxed">
+          Un buen diseño ayuda a entender más rápido qué ofreces.
+        </p>
+      </div>
+
+      <div>
+        <div class="text-lg md:text-xl font-semibold text-white mb-1">
+          Dirección
+        </div>
+        <p class="text-sm text-neutral-300 leading-relaxed">
+          La estructura guía al usuario hacia una acción concreta.
+        </p>
+      </div>
+    </div>
+
+    <!-- cierre -->
+    <div class="relative z-10 mt-6 pt-4 border-t border-white/10">
+      <p class="text-xs text-neutral-500 leading-relaxed">
+        El diseño no es solo estética. También influye en cómo el usuario entiende, navega y decide.
+      </p>
+    </div>
+  </div>
+</div>
 
     </div>
   </div>
 </section>
 
+<!-- SECTION 7: PRUEBA -->
+<section id="prueba" class="py-24 md:py-28 px-6 bg-[#050505] border-t border-white/5 relative overflow-hidden">
+  <h2 class="sr-only">Prueba de valor y estándares de calidad</h2>
 
+  <!-- Fondo -->
+  <canvas id="stats-canvas" class="absolute inset-0 w-full h-full"></canvas>
 
-        <!-- SECTION 9: ACCORDION -->
-        <section class="py-32 px-6 md:px-12 bg-[#050505] border-t border-white/5 relative">
-            <div class="section-label">[ 09. PORTFOLIO FLEX ]</div>
-            <div class="mb-12 flex justify-between items-end">
-              <h2 class="text-4xl font-display font-bold">Casos TubePilotPro</h2>
-              <p class="text-neutral-500 text-sm">Hover para ver el foco</p>
-            </div>
-            <div class="accordion-container flex-col md:flex-row">
-                <div class="accordion-item group cursor-none hoverable">
-                  <img src="https://images.unsplash.com/photo-1485627658391-1365e4e0dbfe?q=80&amp;w=2500" class="accordion-img" alt="Landing Curso">
-                  <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
-                  <div class="accordion-text">
-                    <h4 class="text-2xl font-bold">Landing para lanzamiento de curso</h4>
-                  </div>
-                </div>
-                <div class="accordion-item group cursor-none hoverable">
-                  <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&amp;w=2600&amp;auto=format&amp;fit=crop" class="accordion-img" alt="Landing Webinar">
-                  <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
-                  <div class="accordion-text">
-                    <h4 class="text-2xl font-bold"> webinar</h4>
-                  </div>
-                </div>
-                <div class="accordion-item group cursor-none hoverable">
-                  <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&amp;w=2670&amp;auto=format&amp;fit=crop" class="accordion-img" alt="Landing Lead Magnet">
-                  <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
-                  <div class="accordion-text">
-                    <h4 class="text-2xl font-bold">Landing de lead magnet</h4>
-                  </div>
-                </div>
-                <div class="accordion-item group cursor-none hoverable">
-                  <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=2672&amp;auto=format&amp;fit=crop" class="accordion-img" alt="Landing Comunidad">
-                  <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
-                  <div class="accordion-text">
-                    <h4 class="text-2xl font-bold">Landing para comunidad & membresía</h4>
-                  </div>
-                </div>
-            </div>
-        </section>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40"></div>
 
-       <!-- SECTION 10: CANVAS + CONTACTO -->
+  <div class="relative z-10">
+    <!-- LABEL -->
+    <div class="px-6 md:px-12">
+      <div class="section-label">[ 7. PRUEBA ]</div>
+    </div>
+
+    <!-- CABECERA -->
+    <div class="max-w-4xl mx-auto text-center mb-16 md:mb-20">
+      <p class="text-[11px] uppercase tracking-[0.24em] text-neutral-500 mb-4 reveal-item fade-up">
+        Lo que cuidamos en cada proyecto
+      </p>
+
+      <h3
+        class="reveal-item fade-up text-4xl md:text-6xl font-display font-bold leading-[0.95] tracking-tighter text-white"
+        style="transition-delay: 0.08s;"
+      >
+        No prometemos humo.
+        <br class="hidden md:block">
+        Diseñamos con criterio.
+      </h3>
+
+      <p
+        class="reveal-item fade-up mt-6 text-base md:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed"
+        style="transition-delay: 0.18s;"
+      >
+        Cada web se plantea para generar una mejor percepción de marca, una experiencia más clara
+        y un recorrido pensado para que el usuario avance hacia una acción real.
+      </p>
+    </div>
+
+    <!-- GRID PRINCIPAL -->
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 mb-16 md:mb-20">
+      <!-- CARD 1 -->
+<article
+  class="reveal-item fade-scale glass-panel text-center p-6 md:p-7 group"
+>
+  <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 group-hover:border-[#A396FF]/30 group-hover:bg-white/10">
+    <svg class="w-5 h-5 text-[#A396FF] transition-all duration-300 group-hover:scale-110 group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+     <path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8L12 3z"></path>
+     <path d="M19 14l.9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9L19 14z"></path>
+     <path d="M5 14l1.2 2.8L9 18l-2.8 1.2L5 22l-1.2-2.8L1 18l2.8-1.2L5 14z"></path>
+   </svg>
+  </div>
+
+  <h4 class="text-lg md:text-xl font-semibold text-white mb-3">
+    Diseño a medida
+  </h4>
+
+  <p class="text-sm text-neutral-400 leading-relaxed">
+    Nada de webs genéricas o montadas sin intención. Cada proyecto se adapta a la marca,
+    al objetivo y al tipo de cliente.
+  </p>
+</article>
+
+<!-- CARD 2 -->
+<article
+  class="reveal-item fade-scale glass-panel text-center p-6 md:p-7 group"
+  style="transition-delay: 0.08s;"
+>
+  <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 group-hover:border-[#A396FF]/30 group-hover:bg-white/10">
+    <svg class="w-5 h-5 text-[#A396FF] transition-all duration-300 group-hover:scale-110 group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+     <path d="M14 4.1 12 6"></path>
+     <path d="m5.1 8-2.9-.8"></path>
+     <path d="m6 12-1.9 2"></path>
+     <path d="M7.2 2.2 8 5.1"></path>
+     <path d="M9.037 9.69a.498.498 0 0 1 .653-.653l9.737 3.974a.5.5 0 0 1-.024.93l-3.419 1.33a1 1 0 0 0-.613.613l-1.33 3.419a.5.5 0 0 1-.93.024z"></path>
+   </svg>
+  </div>
+
+  <h4 class="text-lg md:text-xl font-semibold text-white mb-3">
+    Enfoque en conversión
+  </h4>
+
+  <p class="text-sm text-neutral-400 leading-relaxed">
+    Cada bloque, cada CTA y cada decisión visual busca acercar al usuario a una acción concreta:
+    reservar, contactar o comprar.
+  </p>
+</article>
+
+<!-- CARD 3 -->
+<article
+  class="reveal-item fade-scale glass-panel text-center p-6 md:p-7 group"
+  style="transition-delay: 0.16s;"
+>
+  <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 group-hover:border-[#A396FF]/30 group-hover:bg-white/10">
+    <svg class="w-5 h-5 text-[#A396FF] transition-all duration-300 group-hover:scale-110 group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+     <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"></path>
+    </svg>
+  </div>
+
+  <h4 class="text-lg md:text-xl font-semibold text-white mb-3">
+    Rendimiento cuidado
+  </h4>
+
+  <p class="text-sm text-neutral-400 leading-relaxed">
+    Una web premium no solo tiene que verse bien. También debe cargar bien, sentirse fluida
+    y ofrecer una experiencia sólida.
+  </p>
+</article>
+
+<!-- CARD 4 -->
+ <article
+  class="reveal-item fade-scale glass-panel text-center p-6 md:p-7 group"
+  style="transition-delay: 0.24s;"
+>
+  <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 group-hover:border-[#A396FF]/30 group-hover:bg-white/10">
+    <svg class="w-5 h-5 text-[#A396FF] transition-all duration-300 group-hover:scale-110 group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+     <path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"></path>
+     <path d="m9 12 2 2 4-4"></path>
+    </svg>
+  </div>
+
+  <h4 class="text-lg md:text-xl font-semibold text-white mb-3">
+    Soporte y evolución
+  </h4>
+
+  <p class="text-sm text-neutral-400 leading-relaxed">
+    La web no tiene por qué quedarse congelada. También puedes contar con mantenimiento,
+    ajustes y mejoras continuas si el proyecto lo necesita.
+   </p>
+  </article>
+ </div>
+
+    <!-- BLOQUE DE CIERRE -->
+    <div class="text-center max-w-4xl mx-auto">
+      <div class="glass-card-premium p-6 md:p-8 transition-all duration-500 hover:-translate-y-1">
+        <p
+          class="group text-2xl md:text-5xl font-light leading-relaxed text-neutral-300 reveal-paragraph
+                 transition-colors duration-500 hover:text-[#A396FF]"
+        >
+          Una buena web no solo tiene que impresionar. Tiene que transmitir confianza, guiar al usuario y ayudarte a generar negocio.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+       <!-- SECTION 8: CANVAS + CONTACTO -->
 <section
-  id="contact"
+  id="contacto"
   class="relative min-h-[80vh] bg-[#050505] border-t border-white/5 flex items-center overflow-hidden"
 >
-  <div class="section-label">[ 10. ECOSISTEMA TUBEPILOTPRO ]</div>
+  <div class="section-label">[ 8. ECOSISTEMA Pilot Web Studio ]</div>
 
   <!-- Fondo animado -->
-<canvas id="network-canvas" class="network-canvas absolute inset-0 w-full h-full pointer-events-none"></canvas>
+<canvas id="network-canvas" class="network-canvas absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true"></canvas>
 
 
 <!-- Oscurecer un poco para legibilidad -->
-<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40 pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40 pointer-events-none" aria-hidden="true"></div>
 
 <!-- Contenido -->
-<div class="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-16">
+<div class="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-24">
     <!-- Titular -->
     <div class="max-w-2xl mb-10">
       <p class="text-[11px] tracking-[0.24em] uppercase text-neutral-400 mb-3">
-        Conecta todas las piezas de tu funnel
+      Cuéntame tu proyecto
       </p>
       <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-        Hablemos de tu proyecto y vemos cómo encaja en el ecosistema.
+      Veamos qué tipo de web encaja mejor con tu caso.
       </h2>
       <p class="text-sm md:text-base text-neutral-400">
-        Con esta info puedo decirte rápido si soy la persona adecuada para ayudarte, por dónde empezar
-        y qué tipo de página o funnel tiene más sentido para tu caso.
+      Con esta información puedo orientarte rápido, decirte por dónde empezar y plantear una solución que tenga sentido para tu proyecto.
       </p>
     </div>
 
@@ -1493,186 +1691,288 @@
       <!-- Columna info -->
       <div class="space-y-8 lg:col-span-1">
         <div>
-          <h3 class="text-xl font-semibold text-white mb-3">
-            Qué es útil contar en el primer mensaje
-          </h3>
-          <ul class="space-y-3 text-sm text-neutral-300">
-            <li class="flex gap-3">
-              <i data-lucide="dot" class="w-4 h-4 mt-1 text-neutral-500"></i>
-              <span>En qué estado está el proyecto (idea, MVP, ya facturando, relanzamiento…).</span>
-            </li>
-            <li class="flex gap-3">
-              <i data-lucide="dot" class="w-4 h-4 mt-1 text-neutral-500"></i>
-              <span>Tipo de página o funnel: landing, página de venta, funnel para YouTube, membership, etc.</span>
-            </li>
-            <li class="flex gap-3">
-              <i data-lucide="dot" class="w-4 h-4 mt-1 text-neutral-500"></i>
-              <span>Qué os preocupa más ahora mismo: conversión, mensaje, diseño, estructura…</span>
-            </li>
-            <li class="flex gap-3">
-              <i data-lucide="dot" class="w-4 h-4 mt-1 text-neutral-500"></i>
-              <span>Timing aproximado y si tenéis equipo de desarrollo o alguien técnico en el equipo.</span>
-            </li>
-          </ul>
-        </div>
+  <h3 class="text-xl font-semibold text-white mb-3">
+    Cuéntame lo básico y lo vemos
+  </h3>
 
-        <div class="rounded-2xl border border-white/10 bg-white/5/10 p-5 backdrop-blur-sm">
-          <p class="text-xs uppercase tracking-[0.14em] text-neutral-400 mb-2">
-            respuesta
-          </p>
-          <p class="text-sm text-neutral-200">
-            Suelo responder en
-            <span class="font-semibold text-white">menos de 24–48h laborables</span>
-            con una primera propuesta de encaje y siguientes pasos posibles.
-          </p>
-        </div>
+  <ul class="space-y-3 text-sm text-neutral-300">
+    <li class="flex gap-3">
+      <svg class="w-4 h-4 mt-1 text-neutral-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+       <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+      <span>Qué haces o a qué te dedicas</span>
+    </li>
+
+    <li class="flex gap-3">
+      <svg class="w-4 h-4 mt-1 text-neutral-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+       <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+      <span>Qué tipo de web tienes en mente (o si no lo tienes claro)</span>
+    </li>
+
+    <li class="flex gap-3">
+      <svg class="w-4 h-4 mt-1 text-neutral-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+       <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+      <span>Qué te gustaría mejorar o conseguir con la web</span>
+    </li>
+
+    <li class="flex gap-3">
+      <svg class="w-4 h-4 mt-1 text-neutral-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+       <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+      <span>Si tienes alguna referencia o idea en mente</span>
+    </li>
+  </ul>
+</div>
+
+<div class="rounded-2xl border border-white/10 bg-white/5/10 p-5 backdrop-blur-sm">
+  <p class="text-xs uppercase tracking-[0.14em] text-neutral-400 mb-2">
+    Qué pasará después
+  </p>
+
+        <p class="text-sm text-neutral-200">
+        Te responderé en menos de 24–48h con una primera orientación, si encaja contigo
+        y los siguientes pasos para avanzar.
+       </p>
       </div>
+    </div>
 
       <!-- Columna formulario -->
       <div class="lg:col-span-2">
         <div
           class="rounded-2xl border border-white/10 bg-black/70 p-6 md:p-8
-                 shadow-[0_24px_70px_rgba(0,0,0,0.85)] backdrop-blur-md"
+              shadow-[0_18px_48px_rgba(0,0,0,0.65)] backdrop-blur-md"
         >
           <h3 class="text-lg font-semibold text-white mb-4">
-            Envíame los detalles de tu proyecto
+          Cuéntame los detalles de tu proyecto
           </h3>
           <p class="text-sm text-neutral-400 mb-6">
-            Este formulario no envía nada por sí mismo, pero puedes copiar/pegar el contenido
-            y enviarlo por email o usarlo como guía para escribirme.
+          Rellena lo esencial y te responderé con una primera orientación, posibles siguientes pasos y el enfoque que mejor encaje con tu caso.
           </p>
 
-         <form
+         <form 
   id="contactForm"
   class="space-y-5"
   action="https://formspree.io/f/maqyapzy"
   method="POST"
 >
-  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <input
+  type="text"
+  name="_gotcha"
+  class="hidden"
+  tabindex="-1"
+  autocomplete="off"
+  aria-hidden="true"
+  >
   <input type="hidden" name="_subject" value="Nuevo lead desde la landing">
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div>
-      <label class="block text-xs font-medium text-neutral-400 mb-1">Nombre</label>
+      <label for="nombre" class="block text-xs font-medium text-neutral-400 mb-1.5 tracking-[0.02em]">Nombre</label>
       <input
+        id="nombre"
         type="text"
         name="nombre"
+        autocomplete="name"
         required
-        class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-neutral-100 placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#5B4FD7]/70"
+        class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2.5
+       text-sm text-neutral-100 placeholder:text-neutral-500
+       transition-all duration-300 resize-none
+       focus:outline-none
+       focus:border-purple-400
+       focus:bg-black/60
+       focus:ring-2 focus:ring-purple-500/30"
         placeholder="Tu nombre"
       />
     </div>
+
     <div>
-      <label class="block text-xs font-medium text-neutral-400 mb-1">Email</label>
+      <label for="email" class="block text-xs font-medium text-neutral-400 mb-1.5 tracking-[0.02em]">Email</label>
       <input
+        id="email"
         type="email"
         name="email"
+        autocomplete="email"
         required
-        class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-neutral-100 placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#5B4FD7]/70"
+        class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2.5
+       text-sm text-neutral-100 placeholder:text-neutral-500
+       transition-all duration-300 resize-none
+       focus:outline-none
+       focus:border-purple-400
+       focus:bg-black/60
+       focus:ring-2 focus:ring-purple-500/30"
         placeholder="tu@empresa.com"
       />
     </div>
   </div>
 
   <div>
-    <label class="block text-xs font-medium text-neutral-400 mb-1">Tipo de proyecto / página</label>
+    <label for="tipo_proyecto" class="block text-xs font-medium text-neutral-400 mb-1.5 tracking-[0.02em]">Tipo de proyecto / página</label>
     <input
+      id="tipo_proyecto"
       type="text"
       name="tipo_proyecto"
-      class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-neutral-100 placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#5B4FD7]/70"
-      placeholder="Landing, página de venta, funnel YouTube, membership..."
+      autocomplete="off"
+      class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2.5
+       text-sm text-neutral-100 placeholder:text-neutral-500
+       transition-all duration-300 resize-none
+       focus:outline-none
+       focus:border-purple-400
+       focus:bg-black/60
+       focus:ring-2 focus:ring-purple-500/30"
+      placeholder="Por ejemplo: landing, web corporativa, portfolio o rediseño"
     />
   </div>
 
   <div>
-    <label class="block text-xs font-medium text-neutral-400 mb-1">En qué punto estáis y qué necesitáis</label>
+    <label for="detalle" class="block text-xs font-medium text-neutral-400 mb-1.5 tracking-[0.02em]">En qué punto estáis y qué necesitáis</label>
     <textarea
+      id="detalle"
       rows="5"
       name="detalle"
+      autocomplete="off"
       required
-      class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-neutral-100 placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#5B4FD7]/70"
-      placeholder="Cuéntame brevemente la situación, problemas actuales y objetivos..."
+      class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2.5
+       text-sm text-neutral-100 placeholder:text-neutral-500
+       transition-all duration-300 resize-none
+       focus:outline-none
+       focus:border-purple-400
+       focus:bg-black/60
+       focus:ring-2 focus:ring-purple-500/30"
+      placeholder="Cuéntame qué haces, qué necesitas y qué te gustaría conseguir con la web"
     ></textarea>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div>
-      <label class="block text-xs font-medium text-neutral-400 mb-1">Timing aproximado</label>
+      <label for="timing" class="block text-xs font-medium text-neutral-400 mb-1.5 tracking-[0.02em]">Timing aproximado</label>
       <input
+        id="timing"
         type="text"
         name="timing"
-        class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-neutral-100 placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#5B4FD7]/70"
-        placeholder="Por ejemplo: queremos lanzar en 2–3 meses"
+        autocomplete="off"
+        class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2.5
+       text-sm text-neutral-100 placeholder:text-neutral-500
+       transition-all duration-300 resize-none
+       focus:outline-none
+       focus:border-purple-400
+       focus:bg-black/60
+       focus:ring-2 focus:ring-purple-500/30"
+        placeholder="Por ejemplo: en 1 mes, este trimestre o sin fecha cerrada"
       />
     </div>
+
     <div>
-      <label class="block text-xs font-medium text-neutral-400 mb-1">Equipo de desarrollo</label>
+      <label for="equipo_dev" class="block text-xs font-medium text-neutral-400 mb-1.5 tracking-[0.02em]">Equipo de desarrollo</label>
       <input
+        id="equipo_dev"
         type="text"
         name="equipo_dev"
-        class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-neutral-100 placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#5B4FD7]/70"
-        placeholder="Equipo interno, partner, aún no lo tenéis..."
+        autocomplete="organization"
+        class="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2.5
+       text-sm text-neutral-100 placeholder:text-neutral-500
+       transition-all duration-300 resize-none
+       focus:outline-none
+       focus:border-purple-400
+       focus:bg-black/60
+       focus:ring-2 focus:ring-purple-500/30"
+        placeholder="Por ejemplo: vosotros, un partner externo o aún por decidir"
       />
     </div>
   </div>
 
-  <!-- AQUÍ mantiene tu layout original de botones -->
-  <div class="flex items-center justify-between gap-4 pt-2">
-    <button
+  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-2">
+     <button
       type="submit"
       data-cta="submit-form"
-      class="px-5 py-2.5 rounded-full border border-white/10 bg-white/5 text-sm font-medium tracking-wide text-white hover:bg-white/10 transition-all duration-300"
+      aria-label="Enviar información sobre mi proyecto web"
+      class="inline-flex items-center justify-center gap-2
+             px-5 py-2.5 rounded-full
+             bg-gradient-to-r from-[#5B4FD7] to-[#8E8DDB]
+             text-sm font-medium tracking-wide text-white
+             shadow-[0_12px_30px_rgba(91,79,215,0.35)]
+             transition-all duration-300
+             hover:scale-105 hover:shadow-[0_20px_50px_rgba(91,79,215,0.5)]"
     >
-      Enviar solicitud
+      Cuéntame tu proyecto
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14"></path>
+        <path d="m12 5 7 7-7 7"></path>
+      </svg>
     </button>
-             <a
-  href="mailto:hola@tubepilotpro.com?subject=Nuevo%20proyecto%20TubePilotPro&body=Hola%20TubePilotPro%2C%0D%0A%0D%0AMe%20gustar%C3%ADa%20hablar%20sobre%20un%20nuevo%20proyecto.%0D%0ATipo%20de%20proyecto%3A%20%0D%0APresupuesto%20aproximado%3A%20%0D%0APlazo%3A%20%0D%0A%0D%0AGracias."
-  class="inline-flex items-center gap-2 text-xs font-medium text-neutral-300 hover:text-white"
->
-  <i data-lucide="mail-open" class="w-4 h-4"></i>
-  Prefiero escribir directamente un email
-</a>
 
+    <a
+      href="mailto:hola@pilotwebstudio.com?subject=Nuevo%20proyecto%20Pilot%20Web%20Studio&body=Hola%20Pilot%20Web%20Studio%2C%0D%0A%0D%0AMe%20gustar%C3%ADa%20hablar%20sobre%20un%20nuevo%20proyecto."
+     aria-label="Escribir directamente un email a Pilot Web Studio"
+    >
+      class="group inline-flex items-center gap-2 text-xs font-medium text-neutral-300
+             transition-all duration-300 hover:text-white hover:translate-x-1"
+    >
+      <svg class="w-4 h-4 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 8V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v1"></path>
+        <path d="m3 8 9 6 9-6"></path>
+        <path d="M5 19h14a2 2 0 0 0 2-2V8"></path>
+        <path d="M3 8v9a2 2 0 0 0 2 2"></path>
+      </svg>
+      Prefiero escribir directamente un email
+    </a>
 
-            </div>
-          </form>
+    <p class="mt-4 text-xs text-neutral-500">
+      Te responderé en 24–48h con una primera orientación y siguientes pasos.
+    </p>
+   </div>
+  </form>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-        <!-- SECTION 11: CODE REPOSITORY -->
-        <section id="repository" class="py-32 px-6 bg-[#0a0a0a] border-t border-white/5">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-4xl font-display font-bold mb-12 text-white">
-                  Librería de componentes reutilizables para landings y webs
-                </h2>
-                <p class="text-neutral-400 text-sm max-w-2xl mb-10">
-                  Reutiliza patrones visuales que usamos en las landings de TubePilotPro. Copia el snippet y adáptalo a tu stack.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div id="repo-grid" class="contents"></div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <!-- FOOTER -->
-    <footer id="footer" class="footer-fixed bg-black text-white">
-        <div class="max-w-7xl w-full px-6 flex flex-col items-center text-center">
-            <div class="text-[15vw] font-display font-bold leading-none tracking-tighter text-neutral-800">
-      Tubepilotpro
+   <!-- FOOTER -->
+<footer id="footer" class="footer-fixed bg-black text-white">
+  <div class="max-w-7xl w-full px-6 flex flex-col items-center text-center">
+    <div
+      class="text-[15vw] font-display font-bold leading-none tracking-tighter text-neutral-800"
+      aria-hidden="true"
+    >
+      Pilotwebstudio
     </div>
-            <div class="mt-20 text-neutral-600 text-xs">
-              © 2026 Tubepilotpro Landing Studio.
-            </div>
-        </div>
-    </footer>
-<script src="https://unpkg.com/p5@1.9.0/lib/p5.min.js"></script>
-<script src="./JS/main.js" defer></script>
-<script src="./JS/hero-background.js" defer></script>
+
+    <p class="mt-20 text-neutral-600 text-xs">
+      © 2026 Pilot Web Studio.
+    </p>
+  </div>
+</footer>
+<!-- Quita el defer de p5.js, cárgalo siempre primero y síncrono -->
+<script src="https://unpkg.com/p5@1.11.2/lib/p5.min.js"></script>
+<script src="../JS/main.js" defer></script>
+<script src="../JS/hero-background.js" defer></script>
+<!-- WHATSAPP FLOAT CONTACT -->
+<a
+  href="https://wa.me/34656618186?text=Hola%2C%20quiero%20hablar%20sobre%20mi%20web%20y%20ver%20c%C3%B3mo%20podr%C3%ADais%20ayudarme."
+  target="_blank"
+  rel="noopener noreferrer"
+  class="whatsapp-orb group"
+  aria-label="Contactar por WhatsApp"
+>
+  <div class="whatsapp-orb__pulse"></div>
+
+  <div class="whatsapp-orb__icon">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M16.04 3C9.41 3 4.02 8.35 4.02 14.93c0 2.1.56 4.15 1.63 5.96L4 29l8.32-1.6a12.2 12.2 0 0 0 3.72.58c6.63 0 12.02-5.35 12.02-11.93S22.67 3 16.04 3Zm0 22.9c-1.18 0-2.34-.19-3.45-.57l-.5-.17-4.94.95.96-4.7-.28-.48a9.82 9.82 0 0 1-1.51-5.2c0-5.43 4.45-9.85 9.92-9.85s9.92 4.42 9.92 9.85-4.45 9.85-9.92 9.85Zm5.45-7.38c-.3-.15-1.76-.86-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.95 1.16-.17.2-.35.22-.65.07-.3-.15-1.27-.46-2.42-1.46-.9-.79-1.5-1.76-1.67-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.13 3.23 5.16 4.53.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"
+      />
+    </svg>
+  </div>
+
+  <div class="whatsapp-orb__content">
+    <span class="whatsapp-orb__eyebrow">CONSULTA RÁPIDA</span>
+    <strong>¿Hablamos de tu web?</strong>
+  </div>
+</a>
 </body>
 </html>
