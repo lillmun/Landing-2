@@ -8,41 +8,45 @@ document.addEventListener("DOMContentLoaded", () => {
     "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=200",
   ];
 
-  // --- 1. PRELOADER ---
-  const preloader = document.getElementById("preloader");
-  const progress = document.getElementById("loader-progress");
-  const text = document.getElementById("loader-text");
+// --- 1. PRELOADER ---
+const preloader = document.getElementById("preloader");
+const progress = document.getElementById("loader-progress");
+const text = document.getElementById("loader-text");
 
-  // ✅ Si falta algo, no bloquees la web
-  if (!preloader || !progress || !text) {
-    if (preloader) preloader.classList.add("loaded");
-  } else {
-    trailImagesData.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
+if (!preloader || !progress || !text) {
+  if (preloader) preloader.classList.add("loaded");
+} else {
+  trailImagesData.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
 
-    let loadVal = 0;
+  let loadVal = 0;
 
-    // ✅ Failsafe: si algo raro pasa, sales igual
-    const forceExit = setTimeout(() => {
-      preloader.classList.add("loaded");
-    }, 2500);
+  const forceExit = setTimeout(() => {
+    progress.style.width = "100%";
+    text.innerText = "100%";
+    preloader.classList.add("loaded");
+  }, 1200);
 
-    const loadInterval = setInterval(() => {
-      loadVal += Math.floor(Math.random() * 10) + 1;
-      if (loadVal > 100) loadVal = 100;
+  const loadInterval = setInterval(() => {
+    loadVal += Math.floor(Math.random() * 18) + 8;
 
-      progress.style.width = loadVal + "%";
-      text.innerText = loadVal + "%";
+    if (loadVal > 100) loadVal = 100;
 
-      if (loadVal === 100) {
-        clearInterval(loadInterval);
-        clearTimeout(forceExit);
-        setTimeout(() => preloader.classList.add("loaded"), 500);
-      }
-    }, 30);
-  }
+    progress.style.width = loadVal + "%";
+    text.innerText = loadVal + "%";
+
+    if (loadVal === 100) {
+      clearInterval(loadInterval);
+      clearTimeout(forceExit);
+
+      setTimeout(() => {
+        preloader.classList.add("loaded");
+      }, 250);
+    }
+  }, 35);
+}
 
             // --- 2. CURSOR & TRAIL ---
 const cursorDot = document.querySelector('.cursor-dot');
